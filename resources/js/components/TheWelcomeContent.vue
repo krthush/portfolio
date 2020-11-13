@@ -17,8 +17,8 @@
         data: function () {
             return {
             	reveal: false,
-            	revealTime: 3000,
-                // revealTime: 100,
+            	// revealTime: 3000,
+                revealTime: 100,
             	startups: [
 
             		{

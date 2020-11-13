@@ -1,23 +1,31 @@
 <template>
     <div class="my-4 row">
         <div class="col mb-4">
-            <div class="d-flex flex-row ">
-                <div class="d-flex flex-column flex-grow-1">
-                    <button class="clean-button" type="button" data-toggle="collapse" :data-target="'#collapse-points-'+id" @click="moreInfo = !moreInfo">
-                        <span class="sub-heading">
-                            {{ project.name }}
-                        </span>
-                    </button>
-                    <div class="collapse" :id="'collapse-points-'+id">
-                        <div class="my-4 points-text d-flex flex-row">
-                            <li class="list-unstyled">
-                                <ul v-for="point in project.points">{{ point }}</ul>
-                            </li>
-                        </div>                
+            <div class="row">
+                <div class="col-10" style="flex-grow: 10;">
+                    <div class="row">
+                        <div class="col">
+                            <button class="clean-button" type="button" data-toggle="collapse" :data-target="'#collapse-points-'+id" @click="moreInfo = !moreInfo">
+                                <span class="sub-heading">
+                                    {{ project.name }}
+                                </span>
+                            </button>                            
+                        </div>                      
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse" :id="'collapse-points-'+id">
+                                <div class="my-4 points-text">
+                                    <li class="list-unstyled">
+                                        <ul v-for="point in project.points">{{ point }}</ul>
+                                    </li>
+                                </div>                
+                            </div>
+                        </div>
                     </div>                   
                 </div>                   
-                <div class="d-flex flex-column align-items-start" style="min-width: 50px;">
-                    <a v-if="moreInfo" v-for="link in project.links" :key="link.name" :href="link.link" class="my-2 clean-a site-link slide-fade">
+                <div class="col-2 d-flex flex-column" style="min-width: 50px; flex-grow: 10;">
+                    <a v-if="moreInfo" v-for="link in project.links" :key="link.name" :href="link.link" class="my-2 clean-a site-link slide-fade ml-auto">
                         {{ link.name }}
                     </a>
                 </div>
@@ -48,7 +56,7 @@
             this.id = this._uid;
 
             $('.collapse').on('show.bs.collapse', function () {
-                console.log("hi");
+                // console.log("hi");
             });
         }
 

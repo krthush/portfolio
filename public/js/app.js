@@ -2010,6 +2010,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['project'],
   data: function data() {
@@ -2020,8 +2028,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     this.id = this._uid;
-    $('.collapse').on('show.bs.collapse', function () {
-      console.log("hi");
+    $('.collapse').on('show.bs.collapse', function () {// console.log("hi");
     });
   }
 });
@@ -2053,8 +2060,8 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       reveal: false,
-      revealTime: 3000,
-      // revealTime: 100,
+      // revealTime: 3000,
+      revealTime: 100,
       startups: [{
         name: 'Android app that prevents you forgetting to stay in touch.',
         points: ['Used pusher channels with google FCM to build a realtime chat platform with encryption - web & mobile.', 'Modified the AccessibilityService on Android to automate phone actions - specifically sending messages on other IM platforms.', 'Adapted NotificationListenerService to get complete tracking of phone notifications.', 'Designed graphics and visuals based around trees - was pretty.', 'Few hundred happy and active users.'],
@@ -39771,60 +39778,72 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "my-4 row" }, [
     _c("div", { staticClass: "col mb-4" }, [
-      _c("div", { staticClass: "d-flex flex-row " }, [
-        _c("div", { staticClass: "d-flex flex-column flex-grow-1" }, [
-          _c(
-            "button",
-            {
-              staticClass: "clean-button",
-              attrs: {
-                type: "button",
-                "data-toggle": "collapse",
-                "data-target": "#collapse-points-" + _vm.id
-              },
-              on: {
-                click: function($event) {
-                  _vm.moreInfo = !_vm.moreInfo
-                }
-              }
-            },
-            [
-              _c("span", { staticClass: "sub-heading" }, [
-                _vm._v(
-                  "\n                        " +
-                    _vm._s(_vm.project.name) +
-                    "\n                    "
-                )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "collapse",
-              attrs: { id: "collapse-points-" + _vm.id }
-            },
-            [
-              _c("div", { staticClass: "my-4 points-text d-flex flex-row" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col-10", staticStyle: { "flex-grow": "10" } },
+          [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col" }, [
                 _c(
-                  "li",
-                  { staticClass: "list-unstyled" },
-                  _vm._l(_vm.project.points, function(point) {
-                    return _c("ul", [_vm._v(_vm._s(point))])
-                  }),
-                  0
+                  "button",
+                  {
+                    staticClass: "clean-button",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapse-points-" + _vm.id
+                    },
+                    on: {
+                      click: function($event) {
+                        _vm.moreInfo = !_vm.moreInfo
+                      }
+                    }
+                  },
+                  [
+                    _c("span", { staticClass: "sub-heading" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.project.name) +
+                          "\n                            "
+                      )
+                    ])
+                  ]
                 )
               ])
-            ]
-          )
-        ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: { id: "collapse-points-" + _vm.id }
+                  },
+                  [
+                    _c("div", { staticClass: "my-4 points-text" }, [
+                      _c(
+                        "li",
+                        { staticClass: "list-unstyled" },
+                        _vm._l(_vm.project.points, function(point) {
+                          return _c("ul", [_vm._v(_vm._s(point))])
+                        }),
+                        0
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ]
+        ),
         _vm._v(" "),
         _c(
           "div",
           {
-            staticClass: "d-flex flex-column align-items-start",
-            staticStyle: { "min-width": "50px" }
+            staticClass: "col-2 d-flex flex-column",
+            staticStyle: { "min-width": "50px", "flex-grow": "10" }
           },
           _vm._l(_vm.project.links, function(link) {
             return _vm.moreInfo
@@ -39832,7 +39851,7 @@ var render = function() {
                   "a",
                   {
                     key: link.name,
-                    staticClass: "my-2 clean-a site-link slide-fade",
+                    staticClass: "my-2 clean-a site-link slide-fade ml-auto",
                     attrs: { href: link.link }
                   },
                   [
