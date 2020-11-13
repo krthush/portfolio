@@ -2082,50 +2082,40 @@ __webpack_require__.r(__webpack_exports__);
       revealTime: 3000,
       startups: [{
         name: 'Android app that prevents you forgetting to stay in touch.',
-        points: ['Used pusher channels with google FCM to build a realtime chat platform with encryption - web & mobile.', 'Modified the AccessibilityService to automate phone actions - specifically sending messages on other IM platforms.', 'Adapted NotificationListenerService to get complete tracking of phone notifications.', 'Designed graphics and visuals based around trees - was pretty.', 'Few hundred happy and active users.'],
+        points: ['Built a realtime chat platform with encryption (web & mobile) using usher channels with google FCM.', 'Adapted the Notification Listener Service to get complete tracking of phone notifications.', 'Modified the Accessibility Service to automate phone actions - specifically sending messages on other IM platforms.', 'Designed graphics and visuals based around trees - was pretty.', '300+ happy and active users.'],
         links: [{
           name: 'Website',
           link: 'https://nurtureapp.co.uk/'
         }, {
           name: 'App',
-          link: 'https://nurtureapp.co.uk/'
+          link: 'https://play.google.com/store/apps/details?id=com.devemperor.projects.ezchat&hl=en_GB'
         }]
       }, {
-        name: 'Engagement focused survey app for Web/iOS/Android actively being used by a Brandsmiths (London law firm).',
-        points: ['Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Distinctio minus vero itaque blanditiis corrupti ipsum veniam ea impedit modi! Ullam error ipsam illo sit quas exercitationem dicta voluptatem ut aspernatur.', 'Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Distinctio minus vero itaque blanditiis corrupti ipsum veniam ea impedit modi! Ullam error ipsam illo sit quas exercitationem dicta voluptatem ut aspernatur.'],
+        name: 'Engagement survey app for Web/iOS/Android actively used by Brandsmiths (London law firm).',
+        points: ['Coded with Nativescript for rapid cross-platform development - also leveraged webviews to keep shared codebase for major UI components.', 'Collaborated with head partner of the firm to allow for better informed appraisal desicions.', 'Paid for by the firm, with potential for further expansion and work.'],
         links: [{
           name: 'Website',
-          link: 'https://nurtureapp.co.uk/'
+          link: 'https://emitapp.co.uk/'
         }]
       }, {
-        name: 'Android app that prevents yoasafu forgetting asfasfto stay in touch.',
-        points: ['Used pusher channels with google FCM to build a realtime chat platform with encryption - web & mobile.', 'Modified the AccessibilityService on Android to automate phone actions - specifically sending messages on other IM platforms.', 'Adapted NotificationListenerService to get complete tracking of phone notifications.', 'Designed graphics and visuals based around trees - was pretty.', 'Few hundred happy and active users.'],
+        name: 'Desktop & Web time tracking app aimed at automating lawyer timesheets - seed round funded.',
+        points: ['Succesfully fund raised 150k from angel investors, unfortunately had to shutdown after 1 year due to lack of traction.', 'Worked with large AWS tech stack: Kinesis Firehose for stream data from desktop app, Lambdas for data processing, DynamoDB & S3 for storage,', 'Developed desktop app leveraging Windows Hooks allowing for very deep level of desktop usage tracking.', 'Experimented with noob levels of ML for categorizing desktop work log data.'],
         links: [{
-          name: 'Websiasate',
-          link: 'https://nurtureapp.co.uk/'
+          name: 'Pitchdeck',
+          link: '/emit-pitchdeck'
         }, {
-          name: 'Appasf',
-          link: 'https://nurtureapp.co.uk/'
+          name: 'Website',
+          link: 'https://emitapp.co.uk/'
         }]
       }, {
-        name: 'Android app that prevents you forgettinasfasfasfg to stay in touch.',
+        name: 'Created a productivity smartwatch with a succesful Kickstarter campaign and delivery.',
         points: ['Used pusher channels with google FCM to build a realtime chat platform with encryption - web & mobile.', 'Modified the AccessibilityService on Android to automate phone actions - specifically sending messages on other IM platforms.', 'Adapted NotificationListenerService to get complete tracking of phone notifications.', 'Designed graphics and visuals based around trees - was pretty.', 'Few hundred happy and active users.'],
         links: [{
-          name: 'Websiaste',
-          link: 'https://nurtureapp.co.uk/'
+          name: 'Kickstarter',
+          link: 'https://www.kickstarter.com/projects/thush/emit-smartwatch-change-your-perspective-on-time'
         }, {
-          name: 'Appasas',
-          link: 'https://nurtureapp.co.uk/'
-        }]
-      }, {
-        name: 'Android app that prevents you forgettingasfasf to stay in touch.',
-        points: ['Used pusher channels with google FCM to build a realtime chat platform with encryption - web & mobile.', 'Modified the AccessibilityService on Android to automate phone actions - specifically sending messages on other IM platforms.', 'Adapted NotificationListenerService to get complete tracking of phone notifications.', 'Designed graphics and visuals based around trees - was pretty.', 'Few hundred happy and active users.'],
-        links: [{
-          name: 'Websasfite',
-          link: 'https://nurtureapp.co.uk/'
-        }, {
-          name: 'Appasf',
-          link: 'https://nurtureapp.co.uk/'
+          name: 'Website',
+          link: 'https://ownemit.com/'
         }]
       }]
     };
@@ -39671,7 +39661,7 @@ var render = function() {
       "a",
       {
         staticClass: "clean-a header-link mx-4 d-none d-md-block",
-        attrs: { href: "#" }
+        attrs: { href: "https://github.com/krthush" }
       },
       [_vm._v("Github")]
     ),
@@ -39680,7 +39670,9 @@ var render = function() {
       "a",
       {
         staticClass: "clean-a header-link mx-4 d-none d-md-block",
-        attrs: { href: "#" }
+        attrs: {
+          href: "https://www.linkedin.com/in/thushaan-rajaratnam-98452414b/"
+        }
       },
       [_vm._v("LinkedIn")]
     ),
@@ -39739,7 +39731,7 @@ var render = function() {
                     "a",
                     {
                       staticClass: "clean-a header-link",
-                      attrs: { href: "#" }
+                      attrs: { href: "https://github.com/krthush" }
                     },
                     [_vm._v("Github")]
                   )
@@ -39750,7 +39742,10 @@ var render = function() {
                     "a",
                     {
                       staticClass: "clean-a header-link",
-                      attrs: { href: "#" }
+                      attrs: {
+                        href:
+                          "https://www.linkedin.com/in/thushaan-rajaratnam-98452414b/"
+                      }
                     },
                     [_vm._v("LinkedIn")]
                   )

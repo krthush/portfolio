@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/emit-pitchdeck', 'PortfolioController@emitPitchdeck')->name('emit-pitchdeck');
+
+// Route::get('/emit-pitchdeck', [PortfolioController::class, 'emitPitchdeck'])->name('emit-pitchdeck');

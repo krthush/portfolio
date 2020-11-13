@@ -1,8 +1,8 @@
 <template>
     <nav class="navbar justify-content-end fix-top">
 
-        <a class="clean-a header-link mx-4 d-none d-md-block" href="#">Github</a>
-        <a class="clean-a header-link mx-4 d-none d-md-block" href="#">LinkedIn</a>
+        <a class="clean-a header-link mx-4 d-none d-md-block" href="https://github.com/krthush">Github</a>
+        <a class="clean-a header-link mx-4 d-none d-md-block" href="https://www.linkedin.com/in/thushaan-rajaratnam-98452414b/">LinkedIn</a>
         <a class="clean-a header-link mx-4 d-none d-md-block" href="#">CV</a>
         <a class="clean-a header-link mx-4 d-none d-md-block" href="#">About</a>
 
@@ -15,8 +15,8 @@
         <div class="mobile-nav d-md-none d-flex justify-content-center align-items-center" :class="{ open: mobileNav }">
             <transition name="fade">
                 <li v-if="mobileNav" class="list-unstyled text-center">
-                    <ul class="my-header-link"><a class="clean-a header-link" href="#">Github</a></ul>
-                    <ul class="my-header-link"><a class="clean-a header-link" href="#">LinkedIn</a></ul>
+                    <ul class="my-header-link"><a class="clean-a header-link" href="https://github.com/krthush">Github</a></ul>
+                    <ul class="my-header-link"><a class="clean-a header-link" href="https://www.linkedin.com/in/thushaan-rajaratnam-98452414b/">LinkedIn</a></ul>
                     <ul class="my-header-link"><a class="clean-a header-link" href="#">CV</a></ul>
                     <ul class="my-header-link"><a class="clean-a header-link" href="#">About</a></ul>
                 </li>
