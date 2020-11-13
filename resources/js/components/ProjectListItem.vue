@@ -14,7 +14,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <div class="collapse" :id="'collapse-points-'+id">
+                            <div class="collapse points" :id="'collapse-points-'+id">
                                 <div class="my-4 points-text">
                                     <li class="list-unstyled">
                                         <ul v-for="point in project.points">{{ point }}</ul>
@@ -24,10 +24,12 @@
                         </div>
                     </div>                   
                 </div>                   
-                <div class="col-2 d-flex flex-column" style="min-width: 50px; flex-grow: 10;">
-                    <a v-if="moreInfo" v-for="link in project.links" :key="link.name" :href="link.link" class="my-2 clean-a site-link slide-fade ml-auto">
-                        {{ link.name }}
-                    </a>
+                <div class="col-2" style="min-width: 50px; flex-grow: 10;">
+                    <transition-group name="slide-fade" appear class="d-flex flex-column" tag="div">
+                        <a v-if="moreInfo" v-for="link in project.links" :key="link.name" :href="link.link" class="my-2 clean-a site-link slide-fade ml-auto">
+                            {{ link.name }}
+                        </a>
+                    </transition-group>
                 </div>
             </div>
         </div>

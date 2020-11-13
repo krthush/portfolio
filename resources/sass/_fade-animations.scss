@@ -59,10 +59,10 @@
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
 .slide-fade-enter-active {
-    transition: all 0.5s ease-in;
+    transition: all 0.1s ease-in-out;
 }
 .slide-fade-leave-active {
-    transition: all 0.5s ease-in;
+    transition: all 0.1s ease-in-out;
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {

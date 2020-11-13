@@ -2018,6 +2018,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['project'],
   data: function data() {
@@ -39818,7 +39820,7 @@ var render = function() {
                 _c(
                   "div",
                   {
-                    staticClass: "collapse",
+                    staticClass: "collapse points",
                     attrs: { id: "collapse-points-" + _vm.id }
                   },
                   [
@@ -39842,29 +39844,40 @@ var render = function() {
         _c(
           "div",
           {
-            staticClass: "col-2 d-flex flex-column",
+            staticClass: "col-2",
             staticStyle: { "min-width": "50px", "flex-grow": "10" }
           },
-          _vm._l(_vm.project.links, function(link) {
-            return _vm.moreInfo
-              ? _c(
-                  "a",
-                  {
-                    key: link.name,
-                    staticClass: "my-2 clean-a site-link slide-fade ml-auto",
-                    attrs: { href: link.link }
-                  },
-                  [
-                    _vm._v(
-                      "\n                    " +
-                        _vm._s(link.name) +
-                        "\n                "
+          [
+            _c(
+              "transition-group",
+              {
+                staticClass: "d-flex flex-column",
+                attrs: { name: "slide-fade", appear: "", tag: "div" }
+              },
+              _vm._l(_vm.project.links, function(link) {
+                return _vm.moreInfo
+                  ? _c(
+                      "a",
+                      {
+                        key: link.name,
+                        staticClass:
+                          "my-2 clean-a site-link slide-fade ml-auto",
+                        attrs: { href: link.link }
+                      },
+                      [
+                        _vm._v(
+                          "\n                        " +
+                            _vm._s(link.name) +
+                            "\n                    "
+                        )
+                      ]
                     )
-                  ]
-                )
-              : _vm._e()
-          }),
-          0
+                  : _vm._e()
+              }),
+              0
+            )
+          ],
+          1
         )
       ])
     ])
