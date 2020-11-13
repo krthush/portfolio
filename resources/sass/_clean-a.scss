@@ -1,0 +1,11 @@
+/* cleans a styling */
+a {      
+    display: inline;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    &:-webkit-any-link:focus {
+        outline: none;
+    }
+}
