@@ -10962,6 +10962,24 @@ a.text-dark:focus {
   opacity: 0;
 }
 
+/* Enter and leave animations can use different */
+
+/* durations and timing functions.              */
+
+.slide-fade-enter-active {
+  transition: all 0.5s ease-in;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.5s ease-in;
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
 /* cleans button styling */
 
 .clean-button {
@@ -10973,7 +10991,7 @@ a.text-dark:focus {
   background: inherit;
   color: inherit;
   cursor: pointer;
-  text-align: center;
+  text-align: inherit;
   transition: background 250ms ease-in-out, transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;

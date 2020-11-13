@@ -2000,14 +2000,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['project'],
   data: function data() {
     return {
+      id: null,
       moreInfo: false
     };
   },
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    this.id = this._uid;
+    $('.collapse').on('show.bs.collapse', function () {
+      console.log("hi");
+    });
+  }
 });
 
 /***/ }),
@@ -2037,16 +2053,55 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       reveal: false,
-      revealTime: 100,
+      revealTime: 3000,
+      // revealTime: 100,
       startups: [{
-        name: 'Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.',
-        points: ['awooww', 'asasaas']
+        name: 'Android app that prevents you forgetting to stay in touch.',
+        points: ['Used pusher channels with google FCM to build a realtime chat platform with encryption - web & mobile.', 'Modified the AccessibilityService on Android to automate phone actions - specifically sending messages on other IM platforms.', 'Adapted NotificationListenerService to get complete tracking of phone notifications.', 'Designed graphics and visuals based around trees - was pretty.', 'Few hundred happy and active users.'],
+        links: [{
+          name: 'Website',
+          link: 'https://nurtureapp.co.uk/'
+        }, {
+          name: 'App',
+          link: 'https://nurtureapp.co.uk/'
+        }]
       }, {
-        name: ' Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.',
-        points: ['awooww', 'asasaas']
+        name: 'Engagement focused survey app for Web/iOS/Android actively being used by a Brandsmiths (London law firm).',
+        points: ['awooww', 'asasaas'],
+        links: [{
+          name: 'Website',
+          link: 'https://nurtureapp.co.uk/'
+        }]
       }, {
-        name: 'project 3',
-        points: ['awooww', 'asasaas']
+        name: 'Android app that prevents yoasafu forgetting asfasfto stay in touch.',
+        points: ['Used pusher channels with google FCM to build a realtime chat platform with encryption - web & mobile.', 'Modified the AccessibilityService on Android to automate phone actions - specifically sending messages on other IM platforms.', 'Adapted NotificationListenerService to get complete tracking of phone notifications.', 'Designed graphics and visuals based around trees - was pretty.', 'Few hundred happy and active users.'],
+        links: [{
+          name: 'Websiasate',
+          link: 'https://nurtureapp.co.uk/'
+        }, {
+          name: 'Appasf',
+          link: 'https://nurtureapp.co.uk/'
+        }]
+      }, {
+        name: 'Android app that prevents you forgettinasfasfasfg to stay in touch.',
+        points: ['Used pusher channels with google FCM to build a realtime chat platform with encryption - web & mobile.', 'Modified the AccessibilityService on Android to automate phone actions - specifically sending messages on other IM platforms.', 'Adapted NotificationListenerService to get complete tracking of phone notifications.', 'Designed graphics and visuals based around trees - was pretty.', 'Few hundred happy and active users.'],
+        links: [{
+          name: 'Websiaste',
+          link: 'https://nurtureapp.co.uk/'
+        }, {
+          name: 'Appasas',
+          link: 'https://nurtureapp.co.uk/'
+        }]
+      }, {
+        name: 'Android app that prevents you forgettingasfasf to stay in touch.',
+        points: ['Used pusher channels with google FCM to build a realtime chat platform with encryption - web & mobile.', 'Modified the AccessibilityService on Android to automate phone actions - specifically sending messages on other IM platforms.', 'Adapted NotificationListenerService to get complete tracking of phone notifications.', 'Designed graphics and visuals based around trees - was pretty.', 'Few hundred happy and active users.'],
+        links: [{
+          name: 'Websasfite',
+          link: 'https://nurtureapp.co.uk/'
+        }, {
+          name: 'Appasf',
+          link: 'https://nurtureapp.co.uk/'
+        }]
       }]
     };
   },
@@ -6558,7 +6613,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "ul[data-v-034c1e6f] {\n  padding: 0;\n  list-style-type: none;\n}\n.material-icons.md-48[data-v-034c1e6f] {\n  font-size: 48px;\n}\n.expand-icon[data-v-034c1e6f] {\n  position: absolute;\n  bottom: 0;\n}\n.flip[data-v-034c1e6f] {\n  transition: all 0.2s ease-in-out;\n  transform: scaleY(-1);\n}\n.flip-back[data-v-034c1e6f] {\n  transition: all 0.2s ease-in-out;\n  transform: scaleY(1);\n}", ""]);
+exports.push([module.i, ".sub-heading[data-v-034c1e6f] {\n  font-family: \"Montserrat\";\n  border-bottom: 2px solid #fff;\n  padding-bottom: 5px;\n  font-size: 1.5em;\n}\n@media (min-width: 768px) {\n.sub-heading[data-v-034c1e6f] {\n    font-size: 2em;\n}\n}\n.site-link[data-v-034c1e6f] {\n  font-family: \"Montserrat\";\n  padding-bottom: 5px;\n  font-size: 1.5em;\n}\n.points-text[data-v-034c1e6f] {\n  font-family: \"Montserrat\";\n  font-size: 1em;\n}\nul[data-v-034c1e6f] {\n  padding: 0;\n  list-style-type: none;\n}", ""]);
 
 // exports
 
@@ -6577,7 +6632,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".sub-heading[data-v-330a3aad] {\n  margin-bottom: 40px;\n  font-family: \"Montserrat\";\n}", ""]);
+exports.push([module.i, ".sub-heading[data-v-330a3aad] {\n  margin-bottom: 40px;\n  font-family: \"Montserrat\";\n  font-size: 2em;\n}\n@media (min-width: 768px) {\n.sub-heading[data-v-330a3aad] {\n    font-size: 3em;\n}\n}", ""]);
 
 // exports
 
@@ -39715,68 +39770,88 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "my-4 row" }, [
-    _c("div", { staticClass: "col-md-10 d-flex align-items-center" }, [
-      _c("h3", [_vm._v(_vm._s(_vm.project.name))])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "col-md-2" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass:
-            "clean-button mx-4 my-auto d-md-flex float-md-none float-right",
-          on: {
-            click: function($event) {
-              _vm.moreInfo = !_vm.moreInfo
-            }
-          }
-        },
-        [
+    _c("div", { staticClass: "col mb-4" }, [
+      _c("div", { staticClass: "d-flex flex-row " }, [
+        _c("div", { staticClass: "d-flex flex-column flex-grow-1" }, [
           _c(
-            "i",
+            "button",
             {
-              staticClass: "material-icons md-48",
-              class: { flip: _vm.moreInfo, "flip-back": !_vm.moreInfo }
+              staticClass: "clean-button",
+              attrs: {
+                type: "button",
+                "data-toggle": "collapse",
+                "data-target": "#collapse-points-" + _vm.id
+              },
+              on: {
+                click: function($event) {
+                  _vm.moreInfo = !_vm.moreInfo
+                }
+              }
             },
-            [_vm._v("expand_more")]
+            [
+              _c("span", { staticClass: "sub-heading" }, [
+                _vm._v(
+                  "\n                        " +
+                    _vm._s(_vm.project.name) +
+                    "\n                    "
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "collapse",
+              attrs: { id: "collapse-points-" + _vm.id }
+            },
+            [
+              _c("div", { staticClass: "my-4 points-text d-flex flex-row" }, [
+                _c(
+                  "li",
+                  { staticClass: "list-unstyled" },
+                  _vm._l(_vm.project.points, function(point) {
+                    return _c("ul", [_vm._v(_vm._s(point))])
+                  }),
+                  0
+                )
+              ])
+            ]
           )
-        ]
-      ),
-      _vm._v(" "),
-      _vm._m(1)
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "d-flex flex-column align-items-start",
+            staticStyle: { "min-width": "50px" }
+          },
+          _vm._l(_vm.project.links, function(link) {
+            return _vm.moreInfo
+              ? _c(
+                  "a",
+                  {
+                    key: link.name,
+                    staticClass: "my-2 clean-a site-link slide-fade",
+                    attrs: { href: link.link }
+                  },
+                  [
+                    _vm._v(
+                      "\n                    " +
+                        _vm._s(link.name) +
+                        "\n                "
+                    )
+                  ]
+                )
+              : _vm._e()
+          }),
+          0
+        )
+      ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        staticClass: "clean-a mx-4 my-4 d-none d-md-block",
-        attrs: { href: "#" }
-      },
-      [_c("i", { staticClass: "material-icons md-48" }, [_vm._v("read_more")])]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        staticClass: "clean-a mx-4 my-4 d-md-none float-right",
-        attrs: { href: "#" }
-      },
-      [_c("i", { staticClass: "material-icons md-48" }, [_vm._v("read_more")])]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
