@@ -4,7 +4,7 @@
         <a class="clean-a header-link mx-4 d-none d-md-block" href="#">Github</a>
         <a class="clean-a header-link mx-4 d-none d-md-block" href="#">LinkedIn</a>
         <a class="clean-a header-link mx-4 d-none d-md-block" href="#">CV</a>
-        <a class="clean-a header-link mx-4 d-none d-md-block" href="#">About me</a>
+        <a class="clean-a header-link mx-4 d-none d-md-block" href="#">About</a>
 
         <button class="clean-button nav-icon-holder d-flex align-items-center d-md-none" @click="mobileNav = !mobileNav">
             <div class="nav-icon mx-auto" :class="{ open: mobileNav }">
@@ -18,7 +18,7 @@
                     <ul class="my-header-link"><a class="clean-a header-link" href="#">Github</a></ul>
                     <ul class="my-header-link"><a class="clean-a header-link" href="#">LinkedIn</a></ul>
                     <ul class="my-header-link"><a class="clean-a header-link" href="#">CV</a></ul>
-                    <ul class="my-header-link"><a class="clean-a header-link" href="#">About me</a></ul>
+                    <ul class="my-header-link"><a class="clean-a header-link" href="#">About</a></ul>
                 </li>
             </transition>
         </div>
@@ -51,7 +51,7 @@
         height: 100px;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         .fix-top {
             position: fixed;
             top: 0;

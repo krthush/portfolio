@@ -25,7 +25,7 @@
             			name: 'Android app that prevents you forgetting to stay in touch.',
             			points: [
             				'Used pusher channels with google FCM to build a realtime chat platform with encryption - web & mobile.',
-            				'Modified the AccessibilityService on Android to automate phone actions - specifically sending messages on other IM platforms.',
+            				'Modified the AccessibilityService to automate phone actions - specifically sending messages on other IM platforms.',
                             'Adapted NotificationListenerService to get complete tracking of phone notifications.',
                             'Designed graphics and visuals based around trees - was pretty.',
                             'Few hundred happy and active users.'

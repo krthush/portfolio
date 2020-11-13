@@ -2,10 +2,10 @@
     <div class="my-4 row">
         <div class="col mb-4">
             <div class="row">
-                <div class="col-10" style="flex-grow: 10;">
+                <div class="col-md-10" style="flex-grow: 10;">
                     <div class="row">
                         <div class="col">
-                            <button class="clean-button" type="button" data-toggle="collapse" :data-target="'#collapse-points-'+id" @click="moreInfo = !moreInfo">
+                            <button class="clean-button" type="button" data-toggle="collapse" :data-target="'#collapse-points-'+id" @click="toggleMoreInfo()">
                                 <span class="sub-heading">
                                     {{ project.name }}
                                 </span>
@@ -24,9 +24,16 @@
                         </div>
                     </div>                   
                 </div>                   
-                <div class="col-2" style="min-width: 50px; flex-grow: 10;">
+                <div class="col-md-2" style="min-width: 50px; flex-grow: 10;">
                     <transition-group name="slide-fade" appear class="d-flex flex-column" tag="div">
-                        <a v-if="moreInfo" v-for="link in project.links" :key="link.name" :href="link.link" class="my-2 clean-a site-link slide-fade ml-auto">
+                        <a 
+                            v-if="moreInfo" 
+                            v-for="(link, index) in project.links" 
+                            :key="link.name" 
+                            :href="link.link" 
+                            class="mt-2 clean-a site-link slide-fade mx-auto"
+                            :class="{ 'mt-4':(index>0) }"
+                        >
                             {{ link.name }}
                         </a>
                     </transition-group>
@@ -56,10 +63,24 @@
         mounted () {
 
             this.id = this._uid;
+        },
 
-            $('.collapse').on('show.bs.collapse', function () {
-                // console.log("hi");
-            });
+        methods: {
+
+            toggleMoreInfo: function(event) {
+
+                this.moreInfo = !this.moreInfo
+
+                /* If scroll at bottom, auto scrolls down for user */
+                // var d = document.documentElement;
+                // var offset = d.scrollTop + window.innerHeight;
+                // var height = d.offsetHeight;
+                // if (offset >= height) {
+                //     $('html, body').animate({ scrollTop: document.body.scrollHeight }, 500);
+                // }
+
+            }
+
         }
 
     }
@@ -95,7 +116,7 @@
     }
 
     ul {
-        padding: 0;
+        padding: 0px;
         list-style-type: none;
     }
 
