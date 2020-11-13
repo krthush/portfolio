@@ -1,5 +1,5 @@
 <template>
-    <div class="my-4 row">
+    <div class="mt-4 row margin-b">
         <div class="col">
             <project-list-item :key="project.name" v-for="project in projects" :project="project"></project-list-item>  
         </div>
@@ -16,19 +16,12 @@
 
         ],
 
-        data: function () {
-            return {
-
-            }
-        },
-
-        mounted () {
-        }
-
     }
 
 </script>
 
 <style lang="scss" scoped>
-
+    .margin-b {
+        margin-bottom: 60px;
+    }
 </style>

@@ -5,6 +5,10 @@
 		<h1 class="sub-heading">Startups:</h1>
 
         <project-list :projects="startups"></project-list>
+
+        <h1 class="sub-heading">Websites:</h1>
+
+        <project-list :projects="startups"></project-list>
 		
 	</div>
 
@@ -45,8 +49,8 @@
             		{
             			name: 'Engagement focused survey app for Web/iOS/Android actively being used by a Brandsmiths (London law firm).',
             			points: [
-            				'awooww',
-            				'asasaas'
+            				'Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Distinctio minus vero itaque blanditiis corrupti ipsum veniam ea impedit modi! Ullam error ipsam illo sit quas exercitationem dicta voluptatem ut aspernatur.',
+            				'Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Distinctio minus vero itaque blanditiis corrupti ipsum veniam ea impedit modi! Ullam error ipsam illo sit quas exercitationem dicta voluptatem ut aspernatur.'
             			],
                         links: [
                             {
@@ -144,7 +148,6 @@
 <style lang="scss" scoped>
 
     .sub-heading {
-        margin-bottom: 40px;
         font-family:'Montserrat';
         font-size: 2em;
     }

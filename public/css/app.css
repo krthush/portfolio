@@ -10952,6 +10952,16 @@ a.text-dark:focus {
   }
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity cubic-bezier(1, 0, 1, 0) 0.6s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
 /* Enter and leave animations can use different */
 
 /* durations and timing functions.              */
