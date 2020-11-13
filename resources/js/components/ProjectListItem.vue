@@ -4,10 +4,11 @@
         	<h3>{{ project.name }}</h3>
         </div>
         <div class="col-md-2">
-            <a class="clean-a mx-4 my-4 d-md-flex float-md-none float-right"><i class="material-icons md-48">read_more</i></a>
-            <button class="clean-button mx-4 my-4 d-md-flex float-md-none float-right" @click="moreInfo = !moreInfo">
-                <i class="expand-icon material-icons md-48" :class="{ flip: moreInfo, 'flip-back': !moreInfo }">expand_more</i>
+            <a href="#" class="clean-a mx-4 my-4 d-none d-md-block"><i class="material-icons md-48">read_more</i></a>
+            <button class="clean-button mx-4 my-auto d-md-flex float-md-none float-right" @click="moreInfo = !moreInfo">
+                <i class="material-icons md-48" :class="{ flip: moreInfo, 'flip-back': !moreInfo }">expand_more</i>
             </button>
+        	<a href="#" class="clean-a mx-4 my-4 d-md-none float-right"><i class="material-icons md-48">read_more</i></a>
         </div>
     	<!-- <li class="list-unstyled">
     		<ul v-for="point in project.points">{{ point }}</ul>
@@ -51,8 +52,9 @@
         font-size: 48px; 
     }
 
-    .expand-icon{
-        position: relative;
+    .expand-icon {
+        position: absolute;
+        bottom: 0;
     }
 
     .flip {

@@ -1999,6 +1999,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['project'],
   data: function data() {
@@ -2038,7 +2039,7 @@ __webpack_require__.r(__webpack_exports__);
       reveal: false,
       revealTime: 100,
       startups: [{
-        name: 'Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.',
+        name: 'Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.',
         points: ['awooww', 'asasaas']
       }, {
         name: ' Android app that stops you forgetting to stay in touch. Android app that stops you forgetting to stay in touch.',
@@ -6557,7 +6558,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "ul[data-v-034c1e6f] {\n  padding: 0;\n  list-style-type: none;\n}\n.material-icons.md-48[data-v-034c1e6f] {\n  font-size: 48px;\n}\n.expand-icon[data-v-034c1e6f] {\n  position: relative;\n}\n.flip[data-v-034c1e6f] {\n  transition: all 0.2s ease-in-out;\n  transform: scaleY(-1);\n}\n.flip-back[data-v-034c1e6f] {\n  transition: all 0.2s ease-in-out;\n  transform: scaleY(1);\n}", ""]);
+exports.push([module.i, "ul[data-v-034c1e6f] {\n  padding: 0;\n  list-style-type: none;\n}\n.material-icons.md-48[data-v-034c1e6f] {\n  font-size: 48px;\n}\n.expand-icon[data-v-034c1e6f] {\n  position: absolute;\n  bottom: 0;\n}\n.flip[data-v-034c1e6f] {\n  transition: all 0.2s ease-in-out;\n  transform: scaleY(-1);\n}\n.flip-back[data-v-034c1e6f] {\n  transition: all 0.2s ease-in-out;\n  transform: scaleY(1);\n}", ""]);
 
 // exports
 
@@ -39725,7 +39726,7 @@ var render = function() {
         "button",
         {
           staticClass:
-            "clean-button mx-4 my-4 d-md-flex float-md-none float-right",
+            "clean-button mx-4 my-auto d-md-flex float-md-none float-right",
           on: {
             click: function($event) {
               _vm.moreInfo = !_vm.moreInfo
@@ -39736,13 +39737,15 @@ var render = function() {
           _c(
             "i",
             {
-              staticClass: "expand-icon material-icons md-48",
+              staticClass: "material-icons md-48",
               class: { flip: _vm.moreInfo, "flip-back": !_vm.moreInfo }
             },
             [_vm._v("expand_more")]
           )
         ]
-      )
+      ),
+      _vm._v(" "),
+      _vm._m(1)
     ])
   ])
 }
@@ -39753,7 +39756,23 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "a",
-      { staticClass: "clean-a mx-4 my-4 d-md-flex float-md-none float-right" },
+      {
+        staticClass: "clean-a mx-4 my-4 d-none d-md-block",
+        attrs: { href: "#" }
+      },
+      [_c("i", { staticClass: "material-icons md-48" }, [_vm._v("read_more")])]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "clean-a mx-4 my-4 d-md-none float-right",
+        attrs: { href: "#" }
+      },
       [_c("i", { staticClass: "material-icons md-48" }, [_vm._v("read_more")])]
     )
   }
