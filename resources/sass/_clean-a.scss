@@ -1,11 +1,25 @@
 /* cleans a styling */
-a {      
+.clean-a {      
     display: inline;
     padding: 0;
     margin: 0;
     text-decoration: none;
     cursor: pointer;
+    color: inherit;
     &:-webkit-any-link:focus {
         outline: none;
+    }
+    &:focus {
+	    outline: none;
+    }
+    &:hover {
+		color: inherit;
+		text-decoration: none;
+    }
+    &:not([href]):not([class]) {
+    	color: inherit;
+	    &:hover {
+			color: inherit;
+	    }
     }
 }
