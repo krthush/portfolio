@@ -2023,16 +2023,50 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['project'],
   data: function data() {
     return {
-      id: null,
-      moreInfo: false
+      moreInfo: false,
+      videoLinks: []
     };
   },
-  mounted: function mounted() {
-    this.id = this._uid;
+  created: function created() {
+    // fetching only the video links
+    this.videoLinks = this.project.links.filter(function (link) {
+      return link.name == 'Video';
+    });
   },
   methods: {
     toggleMoreInfo: function toggleMoreInfo(event) {
@@ -2080,97 +2114,129 @@ __webpack_require__.r(__webpack_exports__);
     return {
       reveal: false,
       revealTime: 3000,
-      startups: [{
-        name: 'Android app that prevents you forgetting to stay in touch.',
-        points: ['Built a realtime chat platform with encryption (web & mobile) using pusher channels with google FCM.', 'Adapted the Notification Listener Service to get complete tracking of phone notifications.', 'Modified the Accessibility Service to automate phone actions - specifically sending messages on other IM platforms.', 'Designed graphics and visuals based around trees - was pretty.', '300+ happy and active users.'],
-        links: [{
-          name: 'Website',
-          link: 'https://nurtureapp.co.uk/'
+      sections: [{
+        name: 'Startups',
+        projects: [{
+          name: 'Android app that prevents you forgetting to stay in touch.',
+          points: ['Built a realtime chat platform with encryption (web & mobile) using pusher channels with google FCM.', 'Adapted the Notification Listener Service to get complete tracking of phone notifications.', 'Modified the Accessibility Service to automate phone actions - specifically sending messages on other IM platforms.', 'Designed graphics and visuals based around trees - was pretty.', '300+ happy and active users.'],
+          links: [{
+            name: 'Website',
+            link: 'https://nurtureapp.co.uk/'
+          }, {
+            name: 'App',
+            link: 'https://play.google.com/store/apps/details?id=com.devemperor.projects.ezchat&hl=en_GB'
+          }]
         }, {
-          name: 'App',
-          link: 'https://play.google.com/store/apps/details?id=com.devemperor.projects.ezchat&hl=en_GB'
+          name: 'Engagement survey app for Web/iOS/Android actively used by Brandsmiths (London law firm).',
+          points: ['Coded with Nativescript for rapid cross-platform development - also leveraged webviews to keep shared codebase for major UI components.', 'Collaborated with head partner of the firm to make app for better informed appraisal desicions.', 'Paid for by the firm, currently in use with potential for further expansion and work.'],
+          links: [{
+            name: 'Website',
+            link: 'https://emitapp.co.uk/'
+          }, {
+            name: 'iOS',
+            link: 'https://apps.apple.com/gb/app/emit-coach/id1494521879?ign-mpt=uo%3D2'
+          }, {
+            name: 'Android',
+            link: 'https://play.google.com/store/apps/details?id=com.emit.app&hl=en_GB'
+          }]
+        }, {
+          name: 'Desktop & Web time tracking app aimed at automating lawyer timesheets - seed round funded.',
+          points: ['Successfully fund raised £150k from angel investors, unfortunately had to shutdown after 1 year due to lack of traction.', 'Worked with large AWS tech stack: Kinesis Firehose for stream data from desktop app, Lambdas for data processing, DynamoDB & S3 for storage,', 'Developed desktop app leveraging Windows Hooks for deep level of desktop usage tracking.', 'Experimented with noob levels of ML for categorizing desktop work log data.'],
+          links: [{
+            name: 'Pitchdeck',
+            link: '/download/emit_pitchdeck.pdf'
+          }, {
+            name: 'Website',
+            link: 'https://emitapp.co.uk/'
+          }]
+        }, {
+          name: 'Created a productivity smartwatch with a succesful Kickstarter campaign and delivery.',
+          points: ['Successfully funded and delivered Kickstarter for £13k with 180 backers.', 'Worked with OEM suppliers from China to modify and build smartwatch.', 'Made early prototypes with an Android smartwatch app, then modified to work with OEM watches using the OpenWatch TWRP.', 'Brand building - designed website, promoted social media, shot photos, videos and more.'],
+          links: [{
+            name: 'Kickstarter',
+            link: 'https://www.kickstarter.com/projects/thush/emit-smartwatch-change-your-perspective-on-time'
+          }, {
+            name: 'Website',
+            link: 'https://ownemit.com/'
+          }, {
+            name: 'Instagram',
+            link: 'https://www.instagram.com/emitwatch/'
+          }]
         }]
       }, {
-        name: 'Engagement survey app for Web/iOS/Android actively used by Brandsmiths (London law firm).',
-        points: ['Coded with Nativescript for rapid cross-platform development - also leveraged webviews to keep shared codebase for major UI components.', 'Collaborated with head partner of the firm to make app for better informed appraisal desicions.', 'Paid for by the firm, currently in use with potential for further expansion and work.'],
-        links: [{
-          name: 'Website',
-          link: 'https://emitapp.co.uk/'
+        name: 'Websites',
+        projects: [{
+          name: 'Landing page for idea to use car windows as digital advertising space.',
+          points: ['Contact with numerou drivers and companies looking for advertising who showed interest.', 'Tested with smartphone/portable screen combination.', 'Did not continued due to high cost of screen vs. size/ease of viewing from far outside car.'],
+          links: [{
+            name: 'Website',
+            link: 'https://karvert.co.uk/'
+          }]
         }, {
-          name: 'iOS',
-          link: 'https://apps.apple.com/gb/app/emit-coach/id1494521879?ign-mpt=uo%3D2'
+          name: 'A reddit style website for pain points (frequent and intense problems) and ideas.',
+          points: ['Built to help ideate for myself and rest of the emit Team (Stephen & Pius).', 'Anyone with burning problems and cool ideas feel free to post!'],
+          links: [{
+            name: 'Website',
+            link: 'https://painpoints.co.uk/'
+          }]
         }, {
-          name: 'Android',
-          link: 'https://play.google.com/store/apps/details?id=com.emit.app&hl=en_GB'
+          name: 'University learning management system idea with a social media component.',
+          points: ['Built during university to try make educational content on the internet easier.', 'Talked to university ICT and Engineering department to host university content + student login using SAML.', 'Halted due to university studies and large work required to build entire LMS.'],
+          links: [{
+            name: 'Website',
+            link: 'https://makemytech.co.uk/'
+          }]
         }]
       }, {
-        name: 'Desktop & Web time tracking app aimed at automating lawyer timesheets - seed round funded.',
-        points: ['Successfully fund raised £150k from angel investors, unfortunately had to shutdown after 1 year due to lack of traction.', 'Worked with large AWS tech stack: Kinesis Firehose for stream data from desktop app, Lambdas for data processing, DynamoDB & S3 for storage,', 'Developed desktop app leveraging Windows Hooks for deep level of desktop usage tracking.', 'Experimented with noob levels of ML for categorizing desktop work log data.'],
-        links: [{
-          name: 'Pitchdeck',
-          link: '/emit-pitchdeck'
+        name: 'University',
+        projects: [{
+          name: 'Project allocation website and process for engineering students.',
+          points: ['As part of my final year project, worked with head of year to improve the site.', 'Created website with much friendlier UI/UX and also made it mobile friendly.'],
+          links: [{
+            name: 'Report',
+            link: '/download/Thushaan-Rajaratnam-ME4-Final-Report.pdf'
+          }, {
+            name: 'Github',
+            link: 'https://github.com/krthush/fyp'
+          }]
         }, {
-          name: 'Website',
-          link: 'https://emitapp.co.uk/'
-        }]
-      }, {
-        name: 'Created a productivity smartwatch with a succesful Kickstarter campaign and delivery.',
-        points: ['Successfully funded and delivered Kickstarter for £13k with 180 backers.', 'Worked with OEM suppliers from China to modify and build smartwatch.', 'Made early prototypes with an Android smartwatch app, then modified to work with OEM watches using the OpenWatch TWRP.', 'Brand building - designed website, promoted social media, shot photos, videos and more.'],
-        links: [{
-          name: 'Kickstarter',
-          link: 'https://www.kickstarter.com/projects/thush/emit-smartwatch-change-your-perspective-on-time'
+          name: 'Designed and prototyped a space manipulator (robotic arm fit for space)',
+          points: ['As part of my 3rd year group project, made a robotic arm that was controllable by human motion and wireless up to 10m.', 'Developed with Xbox Kinect, using frameworks/libraries based around vision computer vision to calculate joint angles.', 'Setup all the electronics (kinect, wireless sensors, servo motors) and Arduino code around controlling them.'],
+          links: [{
+            name: 'Video',
+            link: '/videos/dmt.mp4'
+          }, {
+            name: 'Report',
+            link: '/download/Group_33_Space_Manipulator_DMT.pdf'
+          }, {
+            name: 'Github',
+            link: 'https://github.com/krthush/dmt'
+          }]
         }, {
-          name: 'Website',
-          link: 'https://ownemit.com/'
-        }, {
-          name: 'Instagram',
-          link: 'https://www.instagram.com/emitwatch/'
-        }]
-      }],
-      websites: [{
-        name: 'Landing page for idea to use car windows as digital advertising space.',
-        points: ['Contact with numerou drivers and companies looking for advertising who showed interest.', 'Tested with smartphone/portable screen combination.', 'Did not continued due to high cost of screen vs. size/ease of viewing from far outside car.'],
-        links: [{
-          name: 'Website',
-          link: 'https://karvert.co.uk/'
-        }]
-      }, {
-        name: 'A reddit style website for pain points (frequent and intense problems) and ideas.',
-        points: ['Built to help ideate for myself and rest of the emit Team (Stephen & Pius).', 'Anyone with burning problems and cool ideas feel free to post!'],
-        links: [{
-          name: 'Website',
-          link: 'https://painpoints.co.uk/'
-        }]
-      }, {
-        name: 'University learning management system idea with a social media component.',
-        points: ['Built during university to try make educational content on the internet easier.', 'Talked to university ICT and Engineering department to host university content + student login using SAML.', 'Halted due to university studies and large work required to build entire LMS.'],
-        links: [{
-          name: 'Website',
-          link: 'https://makemytech.co.uk/'
-        }]
-      }],
-      university: [{
-        name: 'Project allocation website and process for engineering students.',
-        points: ['As part of my final year project, worked with head of year to improve the site.', 'Created website with much friendlier UI/UX and also made it mobile friendly.'],
-        links: [{
-          name: 'Report',
-          link: 'https://karvert.co.uk/'
-        }, {
-          name: 'Github',
-          link: 'https://karvert.co.uk/'
-        }]
-      }, {
-        name: 'Project allocation website and process for engineering students.',
-        points: ['As part of my final year project, worked with head of year to improve the site.', 'Created website with much friendlier UI/UX and also made it mobile friendly.'],
-        links: [{
-          name: 'Report',
-          link: '/fyp-report'
-        }, {
-          name: 'Github',
-          link: 'https://github.com/krthush/fyp'
+          name: 'Programmed an embedded C program to control a small rover to find an target and come back.',
+          points: ['Rover was unofficially - only because there werent official races year wide - the fastest.'],
+          links: [{
+            name: 'Video',
+            link: '/videos/ecm.mp4'
+          }, {
+            name: 'Github',
+            link: 'https://github.com/krthush/BombFinderV2.X'
+          }]
         }]
       }]
     };
+  },
+  created: function created() {
+    // giving unique keys to elements
+    this.sections.forEach(function (section, sectionIndex) {
+      section.id = 'section' + sectionIndex;
+      section.projects.forEach(function (project, projectIndex) {
+        project.id = 'section' + sectionIndex + 'project' + projectIndex;
+        project.links.forEach(function (link, linkIndex) {
+          link.id = 'section' + sectionIndex + 'project' + projectIndex + 'link' + linkIndex;
+        });
+      });
+    });
   },
   mounted: function mounted() {
     setTimeout(this.revealContent, this.revealTime);
@@ -6699,7 +6765,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".sub-heading[data-v-034c1e6f] {\n  font-family: \"Montserrat\";\n  border-bottom: 2px solid #fff;\n  padding-bottom: 5px;\n  font-size: 1.5em;\n}\n@media (min-width: 768px) {\n.sub-heading[data-v-034c1e6f] {\n    font-size: 2em;\n}\n}\n.site-link[data-v-034c1e6f] {\n  font-family: \"Montserrat\";\n  padding-bottom: 5px;\n  font-size: 1.5em;\n}\n.points-text[data-v-034c1e6f] {\n  font-family: \"Montserrat\";\n  font-size: 1em;\n}\nul[data-v-034c1e6f] {\n  padding: 0px;\n  list-style-type: none;\n}", ""]);
+exports.push([module.i, ".sub-heading[data-v-034c1e6f] {\n  font-family: \"Montserrat\";\n  border-bottom: 2px solid #fff;\n  padding-bottom: 5px;\n  font-size: 1.5em;\n}\n@media (min-width: 768px) {\n.sub-heading[data-v-034c1e6f] {\n    font-size: 2em;\n}\n}\n.site-link[data-v-034c1e6f] {\n  font-family: \"Montserrat\";\n  padding-bottom: 5px;\n  font-size: 1.5em;\n}\n.points-text[data-v-034c1e6f] {\n  font-family: \"Montserrat\";\n  font-size: 1em;\n}\nul[data-v-034c1e6f] {\n  padding: 0px;\n  list-style-type: none;\n}\n.video-dialog[data-v-034c1e6f] {\n  max-width: 100%;\n  width: 100%;\n}\n@media screen and (min-width: 768px) {\n.video-dialog[data-v-034c1e6f] {\n    max-width: 80%;\n    width: 80%;\n}\n}\n.video-content[data-v-034c1e6f] {\n  background-color: transparent;\n  border: none;\n}\n.relative-position[data-v-034c1e6f] {\n  position: relative;\n}", ""]);
 
 // exports
 
@@ -39860,7 +39926,7 @@ var render = function() {
       { staticClass: "col" },
       _vm._l(_vm.projects, function(project) {
         return _c("project-list-item", {
-          key: project.name,
+          key: project.id,
           attrs: { project: project }
         })
       }),
@@ -39891,108 +39957,208 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "my-4 row" }, [
-    _c("div", { staticClass: "col mb-4" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-10" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "clean-button",
-                  attrs: {
-                    type: "button",
-                    "data-toggle": "collapse",
-                    "data-target": "#collapse-points-" + _vm.id
-                  },
-                  on: {
-                    click: function($event) {
-                      return _vm.toggleMoreInfo()
+    _c(
+      "div",
+      { staticClass: "col mb-4" },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-10" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "clean-button",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#" + _vm.project.id + "points"
+                    },
+                    on: {
+                      click: function($event) {
+                        return _vm.toggleMoreInfo()
+                      }
                     }
-                  }
-                },
-                [
-                  _c("span", { staticClass: "sub-heading" }, [
-                    _vm._v(
-                      "\n                                " +
-                        _vm._s(_vm.project.name) +
-                        "\n                            "
-                    )
-                  ])
-                ]
-              )
+                  },
+                  [
+                    _c("span", { staticClass: "sub-heading" }, [
+                      _vm._v(
+                        "\n                                " +
+                          _vm._s(_vm.project.name) +
+                          "\n                            "
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse points",
+                    attrs: { id: _vm.project.id + "points" }
+                  },
+                  [
+                    _c("div", { staticClass: "my-4 points-text" }, [
+                      _c(
+                        "li",
+                        { staticClass: "list-unstyled" },
+                        _vm._l(_vm.project.points, function(point) {
+                          return _c("ul", [_vm._v(_vm._s(point))])
+                        }),
+                        0
+                      )
+                    ])
+                  ]
+                )
+              ])
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col" }, [
+          _c(
+            "div",
+            {
+              staticClass: "col-md-2",
+              staticStyle: { "min-width": "50px", "flex-grow": "10" }
+            },
+            [
+              _c(
+                "transition-group",
+                {
+                  staticClass: "d-flex flex-column",
+                  attrs: { name: "slide-fade", appear: "", tag: "div" }
+                },
+                [
+                  _vm._l(_vm.project.links, function(link, index) {
+                    return _vm.moreInfo
+                      ? [
+                          link.name == "Video"
+                            ? _c(
+                                "button",
+                                {
+                                  key: link.id,
+                                  staticClass:
+                                    "mt-2 clean-button site-link slide-fade mx-auto",
+                                  class: { "mt-4": index > 0 },
+                                  attrs: {
+                                    type: "button",
+                                    "data-toggle": "modal",
+                                    "data-target": "#" + link.id + "video"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                            Video\n                        "
+                                  )
+                                ]
+                              )
+                            : _c(
+                                "a",
+                                {
+                                  key: link.id,
+                                  staticClass:
+                                    "mt-2 clean-a site-link slide-fade mx-auto",
+                                  class: { "mt-4": index > 0 },
+                                  attrs: { href: link.link }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                            " +
+                                      _vm._s(link.name) +
+                                      "\n                        "
+                                  )
+                                ]
+                              )
+                        ]
+                      : _vm._e()
+                  })
+                ],
+                2
+              )
+            ],
+            1
+          )
+        ]),
+        _vm._v(" "),
+        _vm._l(_vm.videoLinks, function(link) {
+          return _c(
+            "div",
+            {
+              staticClass: "modal modal-wide fade",
+              attrs: {
+                id: link.id + "video",
+                tabindex: "-1",
+                role: "dialog",
+                "aria-hidden": "true"
+              }
+            },
+            [
               _c(
                 "div",
                 {
-                  staticClass: "collapse points",
-                  attrs: { id: "collapse-points-" + _vm.id }
+                  staticClass:
+                    "modal-dialog modal-dialog-centered video-dialog",
+                  attrs: { role: "document" }
                 },
                 [
-                  _c("div", { staticClass: "my-4 points-text" }, [
-                    _c(
-                      "li",
-                      { staticClass: "list-unstyled" },
-                      _vm._l(_vm.project.points, function(point) {
-                        return _c("ul", [_vm._v(_vm._s(point))])
-                      }),
-                      0
-                    )
+                  _c("div", { staticClass: "modal-content video-content" }, [
+                    _c("div", { staticClass: "modal-body" }, [
+                      _c("div", { staticClass: "row w-100" }, [
+                        _c(
+                          "div",
+                          { staticClass: "col-12 relative-position p-0" },
+                          [
+                            _vm._m(0, true),
+                            _vm._v(" "),
+                            _c(
+                              "video",
+                              {
+                                staticClass: "w-100",
+                                attrs: { id: link.link, controls: "" }
+                              },
+                              [
+                                _c("source", {
+                                  attrs: { src: link.link, type: "video/mp4" }
+                                })
+                              ]
+                            )
+                          ]
+                        )
+                      ])
+                    ])
                   ])
                 ]
               )
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "col-md-2",
-            staticStyle: { "min-width": "50px", "flex-grow": "10" }
-          },
-          [
-            _c(
-              "transition-group",
-              {
-                staticClass: "d-flex flex-column",
-                attrs: { name: "slide-fade", appear: "", tag: "div" }
-              },
-              _vm._l(_vm.project.links, function(link, index) {
-                return _vm.moreInfo
-                  ? _c(
-                      "a",
-                      {
-                        key: link.name,
-                        staticClass:
-                          "mt-2 clean-a site-link slide-fade mx-auto",
-                        class: { "mt-4": index > 0 },
-                        attrs: { href: link.link }
-                      },
-                      [
-                        _vm._v(
-                          "\n                        " +
-                            _vm._s(link.name) +
-                            "\n                    "
-                        )
-                      ]
-                    )
-                  : _vm._e()
-              }),
-              0
-            )
-          ],
-          1
-        )
-      ])
-    ])
+            ]
+          )
+        })
+      ],
+      2
+    )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "close close-btn",
+        attrs: {
+          type: "button",
+          "data-dismiss": "modal",
+          "aria-label": "Close"
+        }
+      },
+      [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -40019,15 +40185,20 @@ var render = function() {
         "div",
         { staticClass: "fade-in col" },
         [
-          _c("h1", { staticClass: "sub-heading" }, [_vm._v("Startups:")]),
-          _vm._v(" "),
-          _c("project-list", { attrs: { projects: _vm.startups } }),
-          _vm._v(" "),
-          _c("h1", { staticClass: "sub-heading" }, [_vm._v("Websites:")]),
-          _vm._v(" "),
-          _c("project-list", { attrs: { projects: _vm.websites } })
+          _vm._l(_vm.sections, function(section) {
+            return [
+              _c("h1", { staticClass: "sub-heading" }, [
+                _vm._v(_vm._s(section.name) + ":")
+              ]),
+              _vm._v(" "),
+              _c("project-list", {
+                key: section.id,
+                attrs: { projects: section.projects }
+              })
+            ]
+          })
         ],
-        1
+        2
       )
     : _vm._e()
 }

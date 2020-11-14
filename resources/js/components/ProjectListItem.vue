@@ -5,7 +5,7 @@
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col">
-                            <button class="clean-button" type="button" data-toggle="collapse" :data-target="'#collapse-points-'+id" @click="toggleMoreInfo()">
+                            <button class="clean-button" type="button" data-toggle="collapse" :data-target="'#' + project.id + 'points'" @click="toggleMoreInfo()">
                                 <span class="sub-heading">
                                     {{ project.name }}
                                 </span>
@@ -14,7 +14,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <div class="collapse points" :id="'collapse-points-'+id">
+                            <div class="collapse points" :id="project.id + 'points'">
                                 <div class="my-4 points-text">
                                     <li class="list-unstyled">
                                         <ul v-for="point in project.points">{{ point }}</ul>
@@ -26,18 +26,49 @@
                 </div>                   
                 <div class="col-md-2" style="min-width: 50px; flex-grow: 10;">
                     <transition-group name="slide-fade" appear class="d-flex flex-column" tag="div">
-                        <a 
-                            v-if="moreInfo" 
-                            v-for="(link, index) in project.links" 
-                            :key="link.name" 
-                            :href="link.link" 
-                            class="mt-2 clean-a site-link slide-fade mx-auto"
-                            :class="{ 'mt-4':(index>0) }"
-                        >
-                            {{ link.name }}
-                        </a>
+                        <template v-if="moreInfo" v-for="(link, index) in project.links">
+                            <button 
+                                v-if="link.name=='Video'"
+                                :key="link.id"
+                                :class="{ 'mt-4':(index>0) }"
+                                class="mt-2 clean-button site-link slide-fade mx-auto"
+                                type="button" 
+                                data-toggle="modal" 
+                                :data-target="'#' + link.id + 'video'"
+                                >
+                                Video
+                            </button>
+                            <a
+                                v-else 
+                                :key="link.id"
+                                :href="link.link" 
+                                :class="{ 'mt-4':(index>0) }"
+                                class="mt-2 clean-a site-link slide-fade mx-auto"
+                            >
+                                {{ link.name }}
+                            </a>                            
+                        </template>
                     </transition-group>
                 </div>
+            </div>
+            <!-- Modal -->
+            <div v-for="link in videoLinks" class="modal modal-wide fade" :id="link.id + 'video'" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered video-dialog" role="document">
+                <div class="modal-content video-content">
+                    <div class="modal-body">
+                        <div class="row w-100">
+                            <div class="col-12 relative-position p-0">
+                                <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                <video :id="link.link" controls class="w-100">
+                                    <source :src="link.link" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>
@@ -55,14 +86,18 @@
 
         data: function () {
             return {
-                id: null,
-                moreInfo: false
+                moreInfo: false,
+                videoLinks: []
             }
         },
 
-        mounted () {
+        created: function () {
 
-            this.id = this._uid;
+            // fetching only the video links
+            this.videoLinks = this.project.links.filter(function(link){
+                return link.name == 'Video';
+            });
+
         },
 
         methods: {
@@ -116,6 +151,25 @@
     ul {
         padding: 0px;
         list-style-type: none;
+    }
+
+
+    .video-dialog {
+        max-width: 100%;
+        width:  100%;
+    }
+    @media screen and (min-width: 768px) {
+        .video-dialog {
+            max-width: 80%;
+            width:  80%;
+        }
+    }
+    .video-content {
+        background-color: transparent;
+        border: none;
+    }
+    .relative-position {
+        position: relative;
     }
 
 </style>

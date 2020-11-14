@@ -12,8 +12,16 @@ class PortfolioController extends Controller
      *
      * @return Response
      */
-    public function emitPitchdeck()
+    public function download($file_name)
     {
-        return Storage::download('emit_pitchdeck.pdf');
+    	$exists = Storage::exists('files/' . $file_name);
+
+    	if ($exists) {
+        	return Storage::download('files/' . $file_name);
+    	} else {
+    		return redirect()->route('welcome')->withErrors([
+    			'File does not exist.'
+    		]);
+    	}
     }
 }
