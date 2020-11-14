@@ -2,7 +2,7 @@
     <div class="my-4 row">
         <div class="col mb-4">
             <div class="row">
-                <div class="col-md-10" style="flex-grow: 10;">
+                <div class="col-md-10">
                     <div class="row">
                         <div class="col">
                             <button class="clean-button" type="button" data-toggle="collapse" :data-target="'#collapse-points-'+id" @click="toggleMoreInfo()">
