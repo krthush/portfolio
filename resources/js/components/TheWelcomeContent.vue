@@ -46,7 +46,6 @@
                                     },
                                 ]
                             },
-
                             {
                                 name: 'Engagement survey app for Web/iOS/Android actively used by Brandsmiths (London law firm).',
                                 points: [
@@ -69,7 +68,6 @@
                                     }
                                 ]
                             },
-
                             {
                                 name: 'Desktop & Web time tracking app aimed at automating lawyer timesheets - seed round funded.',
                                 points: [
@@ -89,7 +87,6 @@
                                     },
                                 ]
                             },
-
                             {
                                 name: 'Created a productivity smartwatch with a succesful Kickstarter campaign and delivery.',
                                 points: [
@@ -182,9 +179,8 @@
                                     }
                                 ]
                             },
-
                             {
-                                name: 'Designed and prototyped a space manipulator (robotic arm fit for space)',
+                                name: 'Designed and prototyped a space manipulator (vision controlled robotic arm fit for space)',
                                 points: [
                                     'As part of my 3rd year group project, made a robotic arm that was controllable by human motion and wireless up to 10m.',
                                     'Developed with Xbox Kinect, using frameworks/libraries based around vision computer vision to calculate joint angles.',
@@ -205,7 +201,6 @@
                                     }
                                 ]
                             },
-
                             {
                                 name: 'Programmed an embedded C program to control a small rover to find an target and come back.',
                                 points: [
@@ -222,7 +217,6 @@
                                     }
                                 ]
                             }
-
                         ]
                     }
                 ]

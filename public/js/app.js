@@ -2054,6 +2054,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['project'],
   data: function data() {
@@ -2068,6 +2069,14 @@ __webpack_require__.r(__webpack_exports__);
       return link.name == 'Video';
     });
   },
+  mounted: function mounted() {
+    this.videoLinks.forEach(function (link) {
+      $("#" + link.id + "modal").on('hidden.bs.modal', function (e) {
+        var vid = document.getElementById(link.id + "video");
+        vid.pause();
+      });
+    });
+  },
   methods: {
     toggleMoreInfo: function toggleMoreInfo(event) {
       this.moreInfo = !this.moreInfo;
@@ -2078,6 +2087,10 @@ __webpack_require__.r(__webpack_exports__);
       // if (offset >= height) {
       //     $('html, body').animate({ scrollTop: document.body.scrollHeight }, 500);
       // }
+    },
+    videoClicked: function videoClicked(videoId) {
+      var vid = document.getElementById(videoId);
+      vid.play();
     }
   }
 });
@@ -2200,7 +2213,7 @@ __webpack_require__.r(__webpack_exports__);
             link: 'https://github.com/krthush/fyp'
           }]
         }, {
-          name: 'Designed and prototyped a space manipulator (robotic arm fit for space)',
+          name: 'Designed and prototyped a space manipulator (vision controlled robotic arm fit for space)',
           points: ['As part of my 3rd year group project, made a robotic arm that was controllable by human motion and wireless up to 10m.', 'Developed with Xbox Kinect, using frameworks/libraries based around vision computer vision to calculate joint angles.', 'Setup all the electronics (kinect, wireless sensors, servo motors) and Arduino code around controlling them.'],
           links: [{
             name: 'Video',
@@ -39796,24 +39809,6 @@ var render = function() {
     ),
     _vm._v(" "),
     _c(
-      "a",
-      {
-        staticClass: "clean-a header-link mx-4 d-none d-md-block",
-        attrs: { href: "#" }
-      },
-      [_vm._v("CV")]
-    ),
-    _vm._v(" "),
-    _c(
-      "a",
-      {
-        staticClass: "clean-a header-link mx-4 d-none d-md-block",
-        attrs: { href: "#" }
-      },
-      [_vm._v("About")]
-    ),
-    _vm._v(" "),
-    _c(
       "button",
       {
         staticClass:
@@ -39866,28 +39861,6 @@ var render = function() {
                       }
                     },
                     [_vm._v("LinkedIn")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("ul", { staticClass: "my-header-link" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "clean-a header-link",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("CV")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("ul", { staticClass: "my-header-link" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "clean-a header-link",
-                      attrs: { href: "#" }
-                    },
-                    [_vm._v("About")]
                   )
                 ])
               ])
@@ -40046,7 +40019,12 @@ var render = function() {
                                   attrs: {
                                     type: "button",
                                     "data-toggle": "modal",
-                                    "data-target": "#" + link.id + "video"
+                                    "data-target": "#" + link.id + "modal"
+                                  },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.videoClicked(link.id + "video")
+                                    }
                                   }
                                 },
                                 [
@@ -40089,7 +40067,7 @@ var render = function() {
             {
               staticClass: "modal modal-wide fade",
               attrs: {
-                id: link.id + "video",
+                id: link.id + "modal",
                 tabindex: "-1",
                 role: "dialog",
                 "aria-hidden": "true"
@@ -40117,7 +40095,7 @@ var render = function() {
                               "video",
                               {
                                 staticClass: "w-100",
-                                attrs: { id: link.link, controls: "" }
+                                attrs: { id: link.id + "video", controls: "" }
                               },
                               [
                                 _c("source", {

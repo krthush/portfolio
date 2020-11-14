@@ -34,7 +34,8 @@
                                 class="mt-2 clean-button site-link slide-fade mx-auto"
                                 type="button" 
                                 data-toggle="modal" 
-                                :data-target="'#' + link.id + 'video'"
+                                :data-target="'#' + link.id + 'modal'"
+                                @click="videoClicked(link.id + 'video')"
                                 >
                                 Video
                             </button>
@@ -52,7 +53,7 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div v-for="link in videoLinks" class="modal modal-wide fade" :id="link.id + 'video'" tabindex="-1" role="dialog" aria-hidden="true">
+            <div v-for="link in videoLinks" class="modal modal-wide fade" :id="link.id + 'modal'" tabindex="-1" role="dialog" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered video-dialog" role="document">
                 <div class="modal-content video-content">
                     <div class="modal-body">
@@ -61,7 +62,7 @@
                                 <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
-                                <video :id="link.link" controls class="w-100">
+                                <video :id="link.id + 'video'" controls class="w-100">
                                     <source :src="link.link" type="video/mp4">
                                 </video>
                             </div>
@@ -100,6 +101,17 @@
 
         },
 
+        mounted: function () {
+
+            this.videoLinks.forEach(function(link) {
+                $("#" + link.id + "modal").on('hidden.bs.modal', function (e) {
+                    var vid = document.getElementById(link.id + "video");
+                    vid.pause();
+                });
+            });
+
+        },
+
         methods: {
 
             toggleMoreInfo: function(event) {
@@ -114,6 +126,11 @@
                 //     $('html, body').animate({ scrollTop: document.body.scrollHeight }, 500);
                 // }
 
+            },
+
+            videoClicked: function (videoId) {
+                var vid = document.getElementById(videoId);
+                vid.play();
             }
 
         }
