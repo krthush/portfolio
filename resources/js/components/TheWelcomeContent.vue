@@ -129,8 +129,74 @@
                             }
                         ]
                     },
+                    {
+                        name: 'A reddit style website for pain points (frequent and intense problems) and ideas.',
+                        points: [
+                            'Built to help ideate for myself and rest of the emit Team (Stephen & Pius).',
+                            'Anyone with burning problems and cool ideas feel free to post!'
+                        ],
+                        links: [
+                            {
+                                name: 'Website',
+                                link: 'https://painpoints.co.uk/'
+                            }
+                        ]
+                    },
+                    {
+                        name: 'University learning management system idea with a social media component.',
+                        points: [
+                            'Built during university to try make educational content on the internet easier.',
+                            'Talked to university ICT and Engineering department to host university content + student login using SAML.',
+                            'Halted due to university studies and large work required to build entire LMS.'
+                        ],
+                        links: [
+                            {
+                                name: 'Website',
+                                link: 'https://makemytech.co.uk/'
+                            }
+                        ]
+                    },
 
-                ]
+                ],
+                university: [
+
+                    {
+                        name: 'Project allocation website and process for engineering students.',
+                        points: [
+                            'As part of my final year project, worked with head of year to improve the site.',
+                            'Created website with much friendlier UI/UX and also made it mobile friendly.'
+                        ],
+                        links: [
+                            {
+                                name: 'Report',
+                                link: 'https://karvert.co.uk/'
+                            },
+                            {
+                                name: 'Github',
+                                link: 'https://karvert.co.uk/'
+                            }
+                        ]
+                    },
+
+                    {
+                        name: 'Project allocation website and process for engineering students.',
+                        points: [
+                            'As part of my final year project, worked with head of year to improve the site.',
+                            'Created website with much friendlier UI/UX and also made it mobile friendly.'
+                        ],
+                        links: [
+                            {
+                                name: 'Report',
+                                link: '/fyp-report'
+                            },
+                            {
+                                name: 'Github',
+                                link: 'https://github.com/krthush/fyp'
+                            }
+                        ]
+                    }
+
+                ],
             }
         },
 

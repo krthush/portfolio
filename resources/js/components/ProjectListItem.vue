@@ -89,8 +89,6 @@
 
 <style lang="scss" scoped>
 
-    $default-transition: all .2s ease-in-out;
-
     .sub-heading {
         font-family:'Montserrat';
         border-bottom: 2px solid #fff;
