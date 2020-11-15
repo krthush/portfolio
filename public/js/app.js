@@ -2227,7 +2227,7 @@ __webpack_require__.r(__webpack_exports__);
           }]
         }, {
           name: 'Programmed an embedded C program to control a small rover to find an target and come back.',
-          points: ['Rover was unofficially - only because there werent official races year wide - the fastest.'],
+          points: ['Developed with low level embedded C (controlled PWM motors, IR/RFID readers, LCD display and more).', 'Rover was unofficially - only because there werent official races year wide - the fastest.'],
           links: [{
             name: 'Video',
             link: '/videos/ecm.mp4'

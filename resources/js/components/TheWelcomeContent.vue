@@ -204,7 +204,8 @@
                             {
                                 name: 'Programmed an embedded C program to control a small rover to find an target and come back.',
                                 points: [
-                                    'Rover was unofficially - only because there werent official races year wide - the fastest.',
+                                    'Developed with low level embedded C (controlled PWM motors, IR/RFID readers, LCD display and more).',
+                                    'Rover was unofficially - only because there werent official races year wide - the fastest.'
                                 ],
                                 links: [
                                     {
