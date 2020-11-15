@@ -5,7 +5,12 @@
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col">
-                            <button class="clean-button" type="button" data-toggle="collapse" :data-target="'#' + project.id + 'points'" @click="toggleMoreInfo()">
+                            <button 
+                                class="clean-button" 
+                                type="button" data-toggle="collapse" 
+                                :data-target="'#' + project.id + 'points'" 
+                                @click="toggleMoreInfo()"
+                                >
                                 <span class="sub-heading">
                                     {{ project.name }}
                                 </span>
@@ -45,7 +50,7 @@
                                 :href="link.link" 
                                 :class="{ 'mt-4':(index>0) }"
                                 class="mt-2 clean-a site-link slide-fade mx-auto"
-                            >
+                                >
                                 {{ link.name }}
                             </a>                            
                         </template>
