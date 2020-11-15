@@ -118,7 +118,7 @@
                             {
                                 name: 'Landing page for idea to use car windows as digital advertising space.',
                                 points: [
-                                    'Contact with numerou drivers and companies looking for advertising who showed interest.',
+                                    'Contact with numerous drivers and companies looking for advertising who showed interest.',
                                     'Tested with smartphone/portable screen combination.',
                                     'Did not continued due to high cost of screen vs. size/ease of viewing from far outside car.',
                                 ],
