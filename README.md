@@ -1,5 +1,5 @@
 # My Portfolio
-Website showcasing stuff I've made - [krthush.com](krthush.com).
+Website showcasing stuff I've made - [krthush.com](https://krthush.com/).
 
 Feel free to use it for your work if you wish - give me a holla if you can!
 
