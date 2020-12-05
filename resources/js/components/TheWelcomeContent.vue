@@ -24,33 +24,13 @@
             	revealTime: 3000,
                 sections: [
                     {
-                        name: 'Startups',
+                        name: 'Funded Startups',
                         projects: [
-                            {
-                                name: 'Android app that prevents you forgetting to stay in touch.',
-                                points: [
-                                    'Built a realtime chat platform with encryption (web & mobile) using pusher channels with google FCM.',
-                                    'Adapted the Notification Listener Service to get complete tracking of phone notifications.',
-                                    'Modified the Accessibility Service to automate phone actions - specifically sending messages on other IM platforms.',
-                                    'Designed graphics and visuals based around trees - was pretty.',
-                                    '300+ happy and active users.'
-                                ],
-                                links: [
-                                    {
-                                        name: 'Website',
-                                        link: 'https://nurtureapp.co.uk/'
-                                    },
-                                    {
-                                        name: 'App',
-                                        link: 'https://play.google.com/store/apps/details?id=com.devemperor.projects.ezchat&hl=en_GB'
-                                    },
-                                ]
-                            },
                             {
                                 name: 'Engagement survey app for Web/iOS/Android actively used by Brandsmiths (London law firm).',
                                 points: [
                                     'Coded with Nativescript for rapid cross-platform development - also leveraged webviews to keep shared codebase for major UI components.',
-                                    'Collaborated with head partner of the firm to make app for better informed appraisal desicions.',
+                                    'Collaborated with head partner of the firm to make app for better informed appraisal decisions.',
                                     'Paid for by the firm, currently in use with potential for further expansion and work.',
                                 ],
                                 links: [
@@ -72,7 +52,7 @@
                                 name: 'Desktop & Web time tracking app aimed at automating lawyer timesheets - seed round funded.',
                                 points: [
                                     'Successfully fund raised £150k from angel investors, unfortunately had to shutdown after 1 year due to lack of traction.',
-                                    'Worked with large AWS tech stack: Kinesis Firehose for stream data from desktop app, Lambdas for data processing, DynamoDB & S3 for storage,',
+                                    'Worked with large AWS tech stack: Kinesis Firehose for stream data from desktop app, Lambdas for data processing, DynamoDB & S3 for storage.',
                                     'Developed desktop app leveraging Windows Hooks for deep level of desktop usage tracking.',
                                     'Experimented with noob levels of ML for categorizing desktop work log data.'
                                 ],
@@ -113,23 +93,28 @@
                         ]
                     },
                     {
-                        name: 'Websites',
+                        name: 'Projects',
                         projects: [
                             {
-                                name: 'Landing page for idea to use car windows as digital advertising space.',
+                                name: 'Android app that prevents you forgetting to stay in touch.',
                                 points: [
-                                    'Contact with numerous drivers and companies looking for advertising who showed interest.',
-                                    'Tested with smartphone/portable screen combination.',
-                                    'Did not continued due to high cost of screen vs. size/ease of viewing from far outside car.',
+                                    'Built a realtime chat platform with encryption (web & mobile) using pusher channels with google FCM.',
+                                    'Adapted the Notification Listener Service to get complete tracking of phone notifications.',
+                                    'Modified the Accessibility Service to automate phone actions - specifically sending messages on other IM platforms.',
+                                    'Designed graphics and visuals based around trees - was pretty.',
+                                    '300+ happy and active users.'
                                 ],
                                 links: [
                                     {
                                         name: 'Website',
-                                        link: 'https://karvert.co.uk/'
-                                    }
+                                        link: 'https://nurtureapp.co.uk/'
+                                    },
+                                    {
+                                        name: 'App',
+                                        link: 'https://play.google.com/store/apps/details?id=com.devemperor.projects.ezchat&hl=en_GB'
+                                    },
                                 ]
-                            },
-                            {
+                            },                            {
                                 name: 'A reddit style website for pain points (frequent and intense problems) and ideas.',
                                 points: [
                                     'Built to help ideate for myself and rest of the emit Team (Stephen & Pius).',
@@ -153,6 +138,20 @@
                                     {
                                         name: 'Website',
                                         link: 'https://makemytech.co.uk/'
+                                    }
+                                ]
+                            },
+                            {
+                                name: 'Landing page for idea to use car windows as digital advertising space.',
+                                points: [
+                                    'Contact with numerous drivers and companies looking for advertising who showed interest.',
+                                    'Tested with smartphone/portable screen combination.',
+                                    'Did not continued due to high cost of screen vs. size/ease of viewing from far outside car.',
+                                ],
+                                links: [
+                                    {
+                                        name: 'Website',
+                                        link: 'https://karvert.co.uk/'
                                     }
                                 ]
                             },

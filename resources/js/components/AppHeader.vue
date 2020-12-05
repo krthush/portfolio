@@ -3,8 +3,8 @@
 
         <a class="clean-a header-link mx-4 d-none d-md-block" href="https://github.com/krthush">Github</a>
         <a class="clean-a header-link mx-4 d-none d-md-block" href="https://www.linkedin.com/in/thushaan-rajaratnam-98452414b/">LinkedIn</a>
-        <!-- <a class="clean-a header-link mx-4 d-none d-md-block" href="#">CV</a>
-        <a class="clean-a header-link mx-4 d-none d-md-block" href="#">About</a> -->
+        <a class="clean-a header-link mx-4 d-none d-md-block" href="/download/Thushaan-Rajaratnam-CV.pdf">CV</a>
+        <!-- <a class="clean-a header-link mx-4 d-none d-md-block" href="#">About</a> -->
 
         <button class="clean-button nav-icon-holder d-flex align-items-center d-md-none" @click="mobileNav = !mobileNav">
             <div class="nav-icon mx-auto" :class="{ open: mobileNav }">
@@ -17,8 +17,8 @@
                 <li v-if="mobileNav" class="list-unstyled text-center">
                     <ul class="my-header-link"><a class="clean-a header-link" href="https://github.com/krthush">Github</a></ul>
                     <ul class="my-header-link"><a class="clean-a header-link" href="https://www.linkedin.com/in/thushaan-rajaratnam-98452414b/">LinkedIn</a></ul>
-                    <!-- <ul class="my-header-link"><a class="clean-a header-link" href="#">CV</a></ul>
-                    <ul class="my-header-link"><a class="clean-a header-link" href="#">About</a></ul> -->
+                    <ul class="my-header-link"><a class="clean-a header-link" href="/download/Thushaan-Rajaratnam-CV.pdf">CV</a></ul>
+                    <!-- <ul class="my-header-link"><a class="clean-a header-link" href="#">About</a></ul> -->
                 </li>
             </transition>
         </div>
