@@ -4,7 +4,7 @@
 
         <template v-for="section in sections">
 
-            <h1 class="sub-heading">{{section.name}}:</h1>
+            <h1 :key="section.id" class="sub-heading">{{section.name}}:</h1>
 
             <project-list :projects="section.projects" :key="section.id"></project-list>
 
@@ -95,6 +95,26 @@
                     {
                         name: 'Projects',
                         projects: [
+                            {
+                                name: 'Faved - platform for influencers to easily earn money and rewards from brands',
+                                points: [
+                                    "Website built using Next.js and Vercel (thereby being serverless and very scalable). Used ISR (incremental static regeneration) with SWR (stale-while-revalidate) so that pages are cached and served with data as quickly as possible.",
+                                    "Designed and built front-end UI for sharing favorite products similar to Instagram's UI for photos.",
+                                    "Built an API to generate an entire 'post' just from a product link or name - this involved using web scrapping techniques to fetch link previews (images + description) as well as using a SERP (search engine results page) API for further product information and easy posting.",
+                                    "Setup platform to link with many affiliate providers (Awin, CJ, Sovrn, etc.) for shared products to automatically start earning commissions for influencers.",
+                                    "Linked platform to Youtube APIs so that influencers can easily manage their product links for their video descriptions through Faved."
+                                ],
+                                links: [
+                                    {
+                                        name: 'Website',
+                                        link: 'https://myfaved.co'
+                                    },
+                                    {
+                                        name: 'Link Previews',
+                                        link: 'https://krthush.medium.com/how-to-create-link-previews-like-social-media-apps-open-source-api-45797d758200'
+                                    },
+                                ]
+                            },
                             {
                                 name: 'Android app that prevents you forgetting to stay in touch.',
                                 points: [
