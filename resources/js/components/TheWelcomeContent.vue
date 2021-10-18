@@ -134,6 +134,24 @@
                                         link: 'https://play.google.com/store/apps/details?id=com.devemperor.projects.ezchat&hl=en_GB'
                                     },
                                 ]
+                            },
+                            {
+                                name: 'Unity game project focused on building a solid foundation for 2d movement',
+                                points: [
+                                    'Built using the unity game engine, but without using the standard physics engine (no rigidbodies / 2d physics - which allows for tighter controls).',
+                                    'Project open sourced, with easy to follow documentation on github.',
+                                    'Positive feedback from devs (3.8k video views, 150 likes, 20 github stars).'
+                                ],
+                                links: [
+                                    {
+                                        name: 'Video',
+                                        link: 'https://www.youtube.com/watch?v=SVACshnciMk'
+                                    },
+                                    {
+                                        name: 'Github',
+                                        link: 'https://github.com/krthush/2d-unity-movement'
+                                    }
+                                ]
                             },                            {
                                 name: 'A reddit style website for pain points (frequent and intense problems) and ideas.',
                                 points: [
