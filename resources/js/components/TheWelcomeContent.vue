@@ -96,7 +96,7 @@
                         name: 'Projects',
                         projects: [
                             {
-                                name: 'Faved - platform for influencers to easily earn money and rewards from brands',
+                                name: 'Platform for influencers to easily earn money and rewards from brands',
                                 points: [
                                     "Website built using Next.js and Vercel (thereby being serverless and very scalable). Used ISR (incremental static regeneration) with SWR (stale-while-revalidate) so that pages are cached and served with data as quickly as possible.",
                                     "Designed and built front-end UI for sharing favorite products similar to Instagram's UI for photos.",
@@ -136,9 +136,9 @@
                                 ]
                             },
                             {
-                                name: 'Unity game project focused on building a solid foundation for 2d movement',
+                                name: 'Unity game project focused on building a solid foundation for 2D movement.',
                                 points: [
-                                    'Built using the unity game engine, but without using the standard physics engine (no rigidbodies / 2d physics - which allows for tighter controls).',
+                                    'Built using the unity game engine, but without using the standard physics engine (no rigidbodies / 2D physics - which allows for tighter controls).',
                                     'Project open sourced, with easy to follow documentation on github.',
                                     'Positive feedback from devs (3.8k video views, 150 likes, 20 github stars).'
                                 ],
@@ -166,7 +166,7 @@
                                 ]
                             },
                             {
-                                name: 'University learning management system idea with a social media component.',
+                                name: 'University learning management system (LMS) with a social media component.',
                                 points: [
                                     'Built during university to try make educational content on the internet easier.',
                                     'Talked to university ICT and Engineering department to host university content + student login using SAML.',
