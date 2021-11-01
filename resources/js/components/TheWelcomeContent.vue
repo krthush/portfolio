@@ -152,7 +152,8 @@
                                         link: 'https://github.com/krthush/2d-unity-movement'
                                     }
                                 ]
-                            },                            {
+                            },
+                            {
                                 name: 'A reddit style website for pain points (frequent and intense problems) and ideas.',
                                 points: [
                                     'Built to help ideate for myself and rest of the emit Team (Stephen & Pius).',
@@ -162,6 +163,22 @@
                                     {
                                         name: 'Website',
                                         link: 'https://painpoints.co.uk/'
+                                    }
+                                ]
+                            },
+                            {
+                                name: 'Chatbot to help manage and announce events for a game server.',
+                                points: [
+                                    'Was able to (remotely) manage an active game server through sending commands to a Discord bot (e.g. $startup to boot the server).'
+                                ],
+                                links: [
+                                    {
+                                        name: 'Github',
+                                        link: 'https://github.com/krthush/dst-discord-bot'
+                                    },
+                                    {
+                                        name: 'Discord',
+                                        link: 'https://discord.gg/VbQdy8mpMD'
                                     }
                                 ]
                             },
