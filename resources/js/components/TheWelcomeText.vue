@@ -2,7 +2,7 @@
     <div class="col welcome-text text-center">
         <div id="typed-strings">
           <p>Hi, I'm Thush</p>
-          <p>Here you'll find the things I've made.</p>
+          <p>Here you'll find what I've made.</p>
         </div>
         <span id="typed"></span>        
     </div>
