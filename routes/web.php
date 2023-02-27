@@ -17,4 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
+Route::get('/linkedin', function () {
+    return redirect()->away('https://www.linkedin.com/in/thushaan-rajaratnam-98452414b/');
+});
+
 Route::get('/download/{file_name}', 'PortfolioController@download')->name('download');
