@@ -73,6 +73,7 @@
         padding: 15px 20px;
         position: relative;
         font-weight: bold;
+        text-decoration: none !important;
         &:after {    
             background: none repeat scroll 0 0 transparent;
             bottom: 0;

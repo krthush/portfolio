@@ -1,8 +1,8 @@
 <template>
-    <div class="col welcome-text text-center">
+    <div class="col welcome-text text-center px-4">
         <div id="typed-strings">
           <p>Hi, I'm Thush</p>
-          <p>Here you'll find what I've made.</p>
+          <p>You'll find what I've made here.</p>
         </div>
         <span id="typed"></span>        
     </div>

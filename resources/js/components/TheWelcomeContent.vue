@@ -1,6 +1,6 @@
 <template>
 
-	<div v-if="reveal" class="fade-in col">
+	<div v-if="reveal" class="fade-in col px-4">
 
         <div v-for="section in sections" :key="section.id">
 

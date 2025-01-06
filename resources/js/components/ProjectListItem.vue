@@ -19,7 +19,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <div v-if="moreInfo" class="collapse show points" :id="project.id + 'points'">
+                            <div class="collapse points" :id="project.id + 'points'">
                                 <div class="my-4 points-text">
                                     <li class="list-unstyled">
                                         <ul v-for="point in project.points">{{ point }}</ul>
