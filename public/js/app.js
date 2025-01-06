@@ -3122,7 +3122,14 @@ __webpack_require__.r(__webpack_exports__);
       sections: [{
         name: 'Startups',
         projects: [{
-          name: 'Platform for influencers to easily earn money and rewards from brands',
+          name: 'Faved - Managed marketplace for influencer sponsorships',
+          points: ["Worked on integrations for hundreds of brands such as Athletic Greens, NordVPN, Notion and more, with thousands of creators such as Linus Tech Tips, ColdFusion, Dami Lee and more.", "I handle building our platform for brands to book sponsorships, creator data / onboarding tech, and also hire super⭐s to join us!"],
+          links: [{
+            name: 'Website',
+            link: 'https://favedd.com'
+          }]
+        }, {
+          name: 'Favorited - Platform for influencers to easily earn money and rewards from brands',
           points: ["Website built using Next.js and Vercel (thereby being serverless and very scalable). Used ISR (incremental static regeneration) with SWR (stale-while-revalidate) so that pages are cached and served with data as quickly as possible.", "Designed and built front-end UI for sharing favorite products similar to Instagram's UI for photos.", "Built an API to generate an entire 'post' just from a product link or name - this involved using web scrapping techniques to fetch link previews (images + description) as well as using a SERP (search engine results page) API for further product information and easy posting.", "Setup platform to link with many affiliate providers (Awin, CJ, Sovrn, etc.) for shared products to automatically start earning commissions for influencers.", "Linked platform to Youtube APIs so that influencers can easily manage their product links for their video descriptions through Faved."],
           links: [{
             name: 'Website',
@@ -3132,17 +3139,11 @@ __webpack_require__.r(__webpack_exports__);
             link: 'https://krthush.medium.com/how-to-create-link-previews-like-social-media-apps-open-source-api-45797d758200'
           }]
         }, {
-          name: 'Engagement survey app for Web/iOS/Android actively used by Brandsmiths (London law firm).',
-          points: ['Coded with Nativescript for rapid cross-platform development - also leveraged webviews to keep shared codebase for major UI components.', 'Collaborated with head partner of the firm to make app for better informed appraisal decisions.', 'Paid for by the firm, currently in use with potential for further expansion and work.'],
+          name: 'Created a productivity smartwatch with a succesful Kickstarter campaign and delivery.',
+          points: ['Successfully funded and delivered Kickstarter for £13k with 180 backers.', 'Worked with OEM suppliers from China to modify and build smartwatch.', 'Made early prototypes with an Android smartwatch app, then modified to work with OEM watches using the OpenWatch TWRP.', 'Brand building - designed website, promoted social media, shot photos, videos and more.'],
           links: [{
-            name: 'Website',
-            link: 'https://emitapp.co.uk/'
-          }, {
-            name: 'iOS',
-            link: 'https://apps.apple.com/gb/app/emit-coach/id1494521879?ign-mpt=uo%3D2'
-          }, {
-            name: 'Android',
-            link: 'https://play.google.com/store/apps/details?id=com.emit.app&hl=en_GB'
+            name: 'Kickstarter',
+            link: 'https://www.kickstarter.com/projects/thush/emit-smartwatch-change-your-perspective-on-time'
           }]
         }, {
           name: 'Desktop & Web time tracking app aimed at automating lawyer timesheets - seed round funded.',
@@ -3150,22 +3151,13 @@ __webpack_require__.r(__webpack_exports__);
           links: [{
             name: 'Pitchdeck',
             link: '/download/emit_pitchdeck.pdf'
-          }, {
-            name: 'Website',
-            link: 'https://emitapp.co.uk/'
           }]
         }, {
-          name: 'Created a productivity smartwatch with a succesful Kickstarter campaign and delivery.',
-          points: ['Successfully funded and delivered Kickstarter for £13k with 180 backers.', 'Worked with OEM suppliers from China to modify and build smartwatch.', 'Made early prototypes with an Android smartwatch app, then modified to work with OEM watches using the OpenWatch TWRP.', 'Brand building - designed website, promoted social media, shot photos, videos and more.'],
+          name: 'Engagement survey app for Web/iOS/Android actively used by Brandsmiths (London law firm).',
+          points: ['Coded with Nativescript for rapid cross-platform development - also leveraged webviews to keep shared codebase for major UI components.', 'Collaborated with head partner of the firm to make app for better informed appraisal decisions.', 'Paid for by the firm, currently in use with potential for further expansion and work.'],
           links: [{
-            name: 'Kickstarter',
-            link: 'https://www.kickstarter.com/projects/thush/emit-smartwatch-change-your-perspective-on-time'
-          }, {
-            name: 'Website',
-            link: 'https://ownemit.com/'
-          }, {
-            name: 'Instagram',
-            link: 'https://www.instagram.com/emitwatch/'
+            name: 'Github',
+            link: 'https://github.com/krthush/emitapp-mobile'
           }]
         }]
       }, {
@@ -3175,10 +3167,7 @@ __webpack_require__.r(__webpack_exports__);
           points: ['Built a realtime chat platform with encryption (web & mobile) using pusher channels with google FCM.', 'Adapted the Notification Listener Service to get complete tracking of phone notifications.', 'Modified the Accessibility Service to automate phone actions - specifically sending messages on other IM platforms.', 'Designed graphics and visuals based around trees - was pretty.', '300+ happy and active users.'],
           links: [{
             name: 'Website',
-            link: 'https://nurtureapp.co.uk/'
-          }, {
-            name: 'App',
-            link: 'https://play.google.com/store/apps/details?id=com.devemperor.projects.ezchat&hl=en_GB'
+            link: 'https://www.producthunt.com/products/nurture-smartest-personal-crm-ever/'
           }]
         }, {
           name: 'Unity game project focused on building a solid foundation for 2D movement.',
@@ -3194,8 +3183,8 @@ __webpack_require__.r(__webpack_exports__);
           name: 'A reddit style website for pain points (frequent and intense problems) and ideas.',
           points: ['Built to help ideate for myself and rest of the emit Team (Stephen & Pius).', 'Anyone with burning problems and cool ideas feel free to post!'],
           links: [{
-            name: 'Website',
-            link: 'https://painpoints.co.uk/'
+            name: 'Github',
+            link: 'https://github.com/krthush/painpoints'
           }]
         }, {
           name: 'Chatbot to help manage and announce events for a game server.',
@@ -3211,15 +3200,15 @@ __webpack_require__.r(__webpack_exports__);
           name: 'University learning management system (LMS) with a social media component.',
           points: ['Built during university to try make educational content on the internet easier.', 'Talked to university ICT and Engineering department to host university content + student login using SAML.', 'Halted due to university studies and large work required to build entire LMS.'],
           links: [{
-            name: 'Website',
-            link: 'https://makemytech.co.uk/'
+            name: 'Github',
+            link: 'https://github.com/krthush/painpoints'
           }]
         }, {
           name: 'Landing page for idea to use car windows as digital advertising space.',
           points: ['Contact with numerous drivers and companies looking for advertising who showed interest.', 'Tested with smartphone/portable screen combination.', 'Did not continued due to high cost of screen vs. size/ease of viewing from far outside car.'],
           links: [{
-            name: 'Website',
-            link: 'https://karvert.co.uk/'
+            name: 'Github',
+            link: 'https://github.com/krthush/karvert'
           }]
         }]
       }, {
