@@ -3477,8 +3477,8 @@ var render = function render() {
     staticClass: "row"
   }, [_c("div", {
     staticClass: "col"
-  }, [_c("div", {
-    staticClass: "collapse points",
+  }, [_vm.moreInfo ? _c("div", {
+    staticClass: "collapse show points",
     attrs: {
       id: _vm.project.id + "points"
     }
@@ -3488,7 +3488,7 @@ var render = function render() {
     staticClass: "list-unstyled"
   }, _vm._l(_vm.project.points, function (point) {
     return _c("ul", [_vm._v(_vm._s(point))]);
-  }), 0)])])])])]), _vm._v(" "), _c("div", {
+  }), 0)])]) : _vm._e()])])]), _vm._v(" "), _c("div", {
     staticClass: "col-md-2",
     staticStyle: {
       "min-width": "50px",
