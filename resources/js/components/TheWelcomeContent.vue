@@ -81,10 +81,6 @@
                                         name: 'Pitchdeck',
                                         link: '/download/emit_pitchdeck.pdf'
                                     },
-                                    {
-                                        name: 'Website',
-                                        link: 'https://emitapp.co.uk/'
-                                    },
                                 ]
                             },
                             {
@@ -100,14 +96,6 @@
                                         name: 'Kickstarter',
                                         link: 'https://www.kickstarter.com/projects/thush/emit-smartwatch-change-your-perspective-on-time'
                                     },
-                                    {
-                                        name: 'Website',
-                                        link: 'https://ownemit.com/'
-                                    },
-                                    {
-                                        name: 'Instagram',
-                                        link: 'https://www.instagram.com/emitwatch/'
-                                    }
                                 ]
                             }
                         ]
@@ -127,11 +115,7 @@
                                 links: [
                                     {
                                         name: 'Website',
-                                        link: 'https://nurtureapp.co.uk/'
-                                    },
-                                    {
-                                        name: 'App',
-                                        link: 'https://play.google.com/store/apps/details?id=com.devemperor.projects.ezchat&hl=en_GB'
+                                        link: 'https://www.producthunt.com/products/nurture-smartest-personal-crm-ever/'
                                     },
                                 ]
                             },
@@ -160,10 +144,6 @@
                                     'Anyone with burning problems and cool ideas feel free to post!'
                                 ],
                                 links: [
-                                    {
-                                        name: 'Website',
-                                        link: 'https://painpoints.co.uk/'
-                                    }
                                 ]
                             },
                             {
@@ -190,10 +170,6 @@
                                     'Halted due to university studies and large work required to build entire LMS.'
                                 ],
                                 links: [
-                                    {
-                                        name: 'Website',
-                                        link: 'https://makemytech.co.uk/'
-                                    }
                                 ]
                             },
                             {
@@ -204,10 +180,6 @@
                                     'Did not continued due to high cost of screen vs. size/ease of viewing from far outside car.',
                                 ],
                                 links: [
-                                    {
-                                        name: 'Website',
-                                        link: 'https://karvert.co.uk/'
-                                    }
                                 ]
                             },
 

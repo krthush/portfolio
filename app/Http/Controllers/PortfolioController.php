@@ -14,13 +14,12 @@ class PortfolioController extends Controller
      */
     public function download($file_name)
     {
-    	$exists = Storage::exists('files/' . $file_name);
-
+    	$exists = Storage::disk('local')->exists($file_name);
     	if ($exists) {
-        	return Storage::download('files/' . $file_name);
+        	return Storage::disk('local')->download($file_name);
     	} else {
     		return redirect()->route('welcome')->withErrors([
-    			'File does not exist.'
+    			'File ' . $file_name . ' does not exist.'
     		]);
     	}
     }
