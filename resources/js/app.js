@@ -6,18 +6,23 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+window.Vue = require('vue').default;
 
 /**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
+ * Import and register components
  */
+import ProjectList from './components/ProjectList.vue'
+import ProjectListItem from './components/ProjectListItem.vue'
+import TheWelcomeContent from './components/TheWelcomeContent.vue'
+import TheWelcomeText from './components/TheWelcomeText.vue'
+import AppHeader from './components/AppHeader.vue'
 
-const files = require.context('./', true, /\.vue$/i)
-files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+// Register components globally
+Vue.component('project-list', ProjectList)
+Vue.component('project-list-item', ProjectListItem)
+Vue.component('the-welcome-content', TheWelcomeContent)
+Vue.component('the-welcome-text', TheWelcomeText)
+Vue.component('app-header', AppHeader)
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -2,13 +2,13 @@
 
 	<div v-if="reveal" class="fade-in col">
 
-        <template v-for="section in sections">
+        <div v-for="section in sections" :key="section.id">
 
-            <h1 :key="section.id" class="sub-heading">{{section.name}}:</h1>
+            <h1 class="sub-heading">{{section.name}}:</h1>
 
-            <project-list :projects="section.projects" :key="section.id"></project-list>
+            <project-list :projects="section.projects"></project-list>
 
-        </template>
+        </div>
 		
 	</div>
 

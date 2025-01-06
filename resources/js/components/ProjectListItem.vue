@@ -34,7 +34,7 @@
                         <template v-if="moreInfo" v-for="(link, index) in project.links">
                             <button 
                                 v-if="link.name=='Video'"
-                                :key="link.id"
+                                :key="'btn-' + link.id"
                                 :class="{ 'mt-4':(index>0) }"
                                 class="mt-2 clean-button site-link slide-fade mx-auto"
                                 type="button" 
@@ -46,7 +46,7 @@
                             </button>
                             <a
                                 v-else 
-                                :key="link.id"
+                                :key="'link-' + link.id"
                                 :href="link.link" 
                                 :class="{ 'mt-4':(index>0) }"
                                 class="mt-2 clean-a site-link slide-fade mx-auto"

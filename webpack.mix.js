@@ -17,4 +17,10 @@ const mix = require('laravel-mix');
 // });
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css').vue();
+    .vue({ version: 2 })
+    .sass('resources/sass/app.scss', 'public/css');
+
+// Add version() if you want to bust cache
+if (mix.inProduction()) {
+    mix.version();
+}

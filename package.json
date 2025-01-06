@@ -19,10 +19,12 @@
         "sass": "^1.20.1",
         "sass-loader": "^8.0.0",
         "sass-resources-loader": "^2.1.1",
-        "vue": "^3.5.13",
+        "vue": "^2.7.16",
+        "vue-loader": "^15.11.1",
         "vue-template-compiler": "^0.1.0"
     },
     "dependencies": {
+        "@popperjs/core": "^2.11.8",
         "typed.js": "^2.0.11"
     }
 }
